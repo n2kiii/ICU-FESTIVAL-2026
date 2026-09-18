@@ -1,0 +1,28 @@
+.thanks-page {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 126px 22px 120px;
+}
+
+.thanks-page .section-heading {
+  display: block;
+  text-align: center;
+}
+
+.thanks-page .section-heading .eyebrow {
+  text-align: center;
+  font-size: clamp(2rem, 6vw, 4.5rem);
+  line-height: 1.1;
+}
+
+.thanks-page .section-heading > p {
+  margin: 0 auto;
+  font-size: clamp(.55rem, 2.2vw, 1rem);
+  white-space: nowrap;
+}
+
+@media (max-width: 760px) {
+  .thanks-page {
+    padding: 88px 14px 84px;
+  }
+}
