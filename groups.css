@@ -1,9 +1,19 @@
 .groups-page {
-  padding-top: 96px;
+  padding: 126px 22px 120px;
 }
 
 .groups-page > .section-heading > p {
   display: none;
+}
+
+.groups-page > .section-heading {
+  display: block;
+  text-align: center;
+}
+
+.groups-page > .section-heading .eyebrow,
+.groups-page > .section-heading h1 {
+  text-align: center;
 }
 
 .group-category#main-building > .section-heading > p,
@@ -1104,7 +1114,7 @@ rect.is-clickable-room:focus {
 
 @media (max-width: 760px) {
   .groups-page {
-    padding-top: 72px;
+    padding: 88px 14px 84px;
   }
 
   .groups-branches {
