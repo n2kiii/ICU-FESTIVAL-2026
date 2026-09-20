@@ -1,0 +1,105 @@
+#page-loader {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(145deg, #f6e2ec, #e8f3f6 52%, #bfe6f1);
+  opacity: 1;
+  visibility: visible;
+  transition: opacity .35s ease, visibility .35s ease;
+}
+
+#page-loader.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.page-loader__inner {
+  position: relative;
+  width: min(78vw, 330px);
+  padding: 28px;
+  text-align: center;
+}
+
+.page-loader__moon {
+  position: relative;
+  display: block;
+  width: 104px;
+  height: 104px;
+  margin: 0 auto 18px;
+  overflow: hidden;
+  border-radius: 50%;
+  background: var(--yellow);
+  box-shadow: 0 0 26px rgba(246, 221, 89, .48);
+}
+
+.page-loader__moon::before {
+  position: absolute;
+  top: -4%;
+  left: 100%;
+  width: 108%;
+  height: 108%;
+  border-radius: 50%;
+  background: var(--paper);
+  content: "";
+  animation: moon-phase 4.8s ease-in-out forwards;
+}
+
+.page-loader__moon::after {
+  content: "";
+}
+
+.page-loader__label {
+  margin: 0;
+  color: var(--teal-dark);
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  letter-spacing: .08em;
+}
+
+.page-loader__copy {
+  margin: 8px 0 0;
+  color: var(--rose);
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  animation: loading-copy-pulse 1.6s ease-in-out infinite;
+}
+
+.page-loader__dots {
+  display: inline-flex;
+  gap: 6px;
+  margin-top: 18px;
+}
+
+.page-loader__dots i {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--teal);
+  animation: loader-dot 1s ease-in-out infinite;
+}
+
+.page-loader__dots i:nth-child(2) { animation-delay: .15s; background: var(--rose); }
+.page-loader__dots i:nth-child(3) { animation-delay: .3s; background: var(--yellow); }
+
+@keyframes moon-phase {
+  0% { left: 100%; }
+  68%, 100% { left: -108%; }
+}
+
+@keyframes loader-dot {
+  0%, 100% { transform: translateY(0); opacity: .45; }
+  50% { transform: translateY(-5px); opacity: 1; }
+}
+
+@keyframes loading-copy-pulse {
+  0%, 100% { opacity: .48; transform: translateY(0); }
+  50% { opacity: 1; transform: translateY(-2px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #page-loader, .page-loader__moon::before, .page-loader__dots i, .page-loader__copy { animation: none; transition: none; }
+}

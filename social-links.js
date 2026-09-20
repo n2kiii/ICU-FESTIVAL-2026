@@ -1,6 +1,12 @@
 (function () {
   'use strict';
 
+  if (!window.__pageLoaderInitialized) {
+    var loadingScript = document.createElement('script');
+    loadingScript.src = 'loading.js';
+    document.head.appendChild(loadingScript);
+  }
+
   if (window.location.pathname.endsWith('/donation.html')) {
     var donationStyle = document.createElement('link');
     donationStyle.rel = 'stylesheet';
