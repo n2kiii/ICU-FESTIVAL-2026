@@ -31,7 +31,7 @@
     }
     var rain = document.createElement('div');
     rain.className = 'rose-rain';
-    rain.innerHTML = '<img class="rose-rain__image" src="assets/blue-rose-rain.png" alt="">';
+    rain.innerHTML = '<img class="rose-rain__image" src="assets/blue-rose-rain2.png" alt="">';
     document.body.append(rain);
     rain.addEventListener('animationend', function () {
       rain.remove();

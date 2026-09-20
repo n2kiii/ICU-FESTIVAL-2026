@@ -83,7 +83,7 @@
   width: 100vw;
   max-width: none;
   transform: translateX(-50%);
-  animation: rose-rain-fall 4.4s cubic-bezier(.22, .61, .36, 1) forwards;
+  animation: rose-rain-fall 6s cubic-bezier(.22, .61, .36, 1) forwards;
 }
 
 @keyframes rose-rain-fall {
