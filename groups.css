@@ -1,5 +1,5 @@
 .groups-page {
-  padding: 126px 22px 120px;
+  padding: 158px 40px 156px;
 }
 
 .groups-page > .section-heading > p {
@@ -14,6 +14,10 @@
 .groups-page > .section-heading .eyebrow,
 .groups-page > .section-heading h1 {
   text-align: center;
+}
+
+.groups-page > .section-heading h1 {
+  font-size: clamp(2.8rem, 6vw, 4.8rem);
 }
 
 .group-category#main-building > .section-heading > p,
@@ -1114,7 +1118,11 @@ rect.is-clickable-room:focus {
 
 @media (max-width: 760px) {
   .groups-page {
-    padding: 88px 14px 84px;
+    padding: 112px 20px 104px;
+  }
+
+  .groups-page > .section-heading h1 {
+    font-size: clamp(2.2rem, 12vw, 3.2rem);
   }
 
   .groups-branches {
