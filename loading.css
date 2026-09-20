@@ -68,6 +68,30 @@
   animation: loading-copy-pulse 1.6s ease-in-out infinite;
 }
 
+.rose-rain {
+  position: fixed;
+  inset: 0;
+  z-index: 101;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.rose-rain__image {
+  position: absolute;
+  top: -105vh;
+  left: 50%;
+  width: 100vw;
+  max-width: none;
+  transform: translateX(-50%);
+  animation: rose-rain-fall 4.4s cubic-bezier(.22, .61, .36, 1) forwards;
+}
+
+@keyframes rose-rain-fall {
+  0% { top: -105vh; opacity: 0; transform: translateX(-50%) rotate(-2deg); }
+  20% { opacity: .68; }
+  100% { top: 105vh; opacity: .68; transform: translateX(-50%) rotate(2deg); }
+}
+
 .page-loader__dots {
   display: inline-flex;
   gap: 6px;

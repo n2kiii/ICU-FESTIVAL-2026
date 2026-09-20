@@ -21,10 +21,27 @@
     });
   }
 
-  var moon = loader.querySelector('.page-loader__moon');
-  if (moon) moon.addEventListener('animationend', hide, { once: true });
+  var roseRainStarted = false;
+  function showRoseRain() {
+    if (roseRainStarted) return;
+    roseRainStarted = true;
+    if (window.location.pathname.endsWith('/index.html') === false && window.location.pathname.endsWith('/') === false) {
+      hide();
+      return;
+    }
+    var rain = document.createElement('div');
+    rain.className = 'rose-rain';
+    rain.innerHTML = '<img class="rose-rain__image" src="assets/blue-rose-rain.png" alt="">';
+    document.body.append(rain);
+    rain.addEventListener('animationend', function () {
+      rain.remove();
+      hide();
+    }, { once: true });
+  }
+
+  window.setTimeout(showRoseRain, 4900);
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    window.addEventListener('load', hide, { once: true });
+    window.setTimeout(showRoseRain, 0);
   }
 
   document.addEventListener('click', function (event) {
