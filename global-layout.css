@@ -1,13 +1,25 @@
+html,
 body {
   background: linear-gradient(145deg, #f6e2ec 0%, #e8f3f6 48%, #bfe6f1 100%) fixed !important;
 }
 
 main.page-shell {
+  width: min(100% - 44px, 1040px);
   max-width: none;
+  margin: 0 auto;
+  padding: 126px 0 120px;
   background: transparent;
 }
 
-.page-shell:has(.donation-letter) > .card {
+@media (max-width: 760px) {
+  main.page-shell {
+    width: min(100% - 28px, 1040px);
+    padding: 88px 0 84px;
+  }
+}
+
+.page-shell:has(.donation-letter) > .card,
+body:has(.donation-letter) .page-shell > .card {
   background: transparent !important;
   border-color: transparent !important;
   box-shadow: none !important;
