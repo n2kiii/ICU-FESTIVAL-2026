@@ -59,6 +59,91 @@ main.page-shell:has(.stage-page) {
   height: auto;
 }
 
+.stage-program-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 36px;
+}
+
+.stage-program-card {
+  position: relative;
+  min-height: 260px;
+  padding: 22px;
+  border: 1px solid rgba(154, 122, 180, .26);
+  border-radius: 18px 6px 18px 6px;
+  background: #f8f3ff;
+  box-shadow: 7px 8px 0 rgba(154, 122, 180, .15);
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+
+.stage-program-card::before {
+  position: absolute;
+  top: -22px;
+  right: -14px;
+  width: 78px;
+  height: 78px;
+  border: 2px dashed rgba(220, 79, 137, .4);
+  border-radius: 50%;
+  content: "";
+}
+
+.stage-program-card:nth-child(3n + 2) {
+  background: #fff3f7;
+  box-shadow: 7px 8px 0 rgba(220, 79, 137, .14);
+}
+
+.stage-program-card:nth-child(3n + 2)::before {
+  border-color: rgba(220, 79, 137, .32);
+}
+
+.stage-program-card:nth-child(3n) {
+  background: #eef8f8;
+  box-shadow: 7px 8px 0 rgba(22, 142, 172, .13);
+}
+
+.stage-program-card:nth-child(3n)::before {
+  border-color: rgba(22, 142, 172, .34);
+}
+
+.stage-program-card:hover {
+  transform: translateY(-5px) rotate(-.35deg);
+  box-shadow: 7px 13px 0 rgba(154, 122, 180, .22);
+}
+
+.stage-program-card__icon {
+  position: relative;
+  z-index: 1;
+  width: 72px;
+  height: 72px;
+  border: 4px solid var(--white);
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(22, 142, 172, .18);
+}
+
+.stage-program-card h3 {
+  position: relative;
+  z-index: 1;
+  margin: 16px 0 4px;
+  color: var(--teal-dark);
+  font-size: 1.08rem;
+}
+
+.stage-program-card__title {
+  margin: 0 0 10px;
+  color: var(--rose);
+  font-family: var(--serif);
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.stage-program-card > p:last-child {
+  margin: 0;
+  font-size: .86rem;
+  line-height: 1.7;
+}
+
 @media (max-width: 760px) {
   main.page-shell:has(.stage-page) {
     width: min(100% - 28px, 1040px);
@@ -67,6 +152,16 @@ main.page-shell:has(.stage-page) {
 
   .stage-page__heading > p:last-child {
     font-size: .9rem;
+  }
+
+  .stage-program-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .stage-program-card {
+    min-height: 0;
+    padding: 16px;
   }
 
   .stage-schedule {
