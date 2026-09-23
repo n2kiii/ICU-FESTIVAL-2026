@@ -7,7 +7,7 @@ if (thanksCardTitle) thanksCardTitle.textContent = "SPECIAL THANKS";
 
 const sponsorGrid = document.querySelector(".sponsor-grid");
 if (sponsorGrid) {
-  sponsorGrid.innerHTML = `<a href="https://subsites.icu.ac.jp/yuasa_museum/taizanso_web/" aria-label="泰山荘特別公開" target="_blank" rel="noopener noreferrer"><img src="assets/sponsor-taizanso.png" alt="泰山荘特別公開"></a><a href="https://subsites.icu.ac.jp/yuasa_museum/" aria-label="ICU湯浅八郎記念館" target="_blank" rel="noopener noreferrer"><img src="assets/sponsor-hachiro.png" alt="ICU湯浅八郎記念館"></a>`;
+  sponsorGrid.innerHTML = `<a href="https://subsites.icu.ac.jp/yuasa_museum/taizanso_web/" aria-label="泰山荘特別公開" target="_blank" rel="noopener noreferrer"><img src="assets/sponsor-taizanso.png" alt="泰山荘特別公開"></a><a href="https://subsites.icu.ac.jp/yuasa_museum/" aria-label="ICU湯浅八郎記念館" target="_blank" rel="noopener noreferrer"><img src="assets/sponsor-hachiro.png" alt="ICU湯浅八郎記念館"></a><a href="https://musasisakai-ds.co.jp/" aria-label="武蔵境自動車教習所" target="_blank" rel="noopener noreferrer"><img src="assets/sponsor-musashisakai.jpg" alt="武蔵境自動車教習所"></a><a href="https://menkyolive.net/" aria-label="免許合宿ライブ" target="_blank" rel="noopener noreferrer"><img src="assets/sponsor-menkyo-live.png" alt="免許合宿ライブ"></a>`;
 }
 
 if (timetableImage) {
