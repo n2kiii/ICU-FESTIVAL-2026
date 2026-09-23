@@ -59,6 +59,121 @@ main.page-shell:has(.stage-page) {
   height: auto;
 }
 
+.stage-highlight-nav {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 30px;
+}
+
+.stage-highlight-button {
+  padding: 14px 30px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--rose), #f6dd59);
+  color: var(--white);
+  font-family: var(--serif);
+  font-size: 1.05rem;
+  font-weight: 800;
+  letter-spacing: .04em;
+  text-decoration: none;
+  box-shadow: 0 8px 0 rgba(154, 122, 180, .28);
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+
+.stage-highlight-button:hover {
+  transform: translateY(3px);
+  box-shadow: 0 5px 0 rgba(154, 122, 180, .28);
+}
+
+.stage-highlight {
+  scroll-margin-top: 100px;
+  margin-top: 22px;
+  padding: 28px 30px;
+  border: 2px solid rgba(220, 79, 137, .32);
+  border-radius: 20px 6px 20px 6px;
+  background: #fff6f2;
+  box-shadow: 8px 9px 0 rgba(220, 79, 137, .14);
+}
+
+.stage-highlight .eyebrow {
+  color: var(--rose);
+}
+
+.stage-highlight h2 {
+  margin: 6px 0 2px;
+  color: var(--teal-dark);
+  font-family: var(--serif);
+  font-size: 1.5rem;
+}
+
+.stage-highlight__title {
+  margin: 0 0 8px;
+  color: var(--rose);
+  font-weight: 700;
+}
+
+.stage-highlight__note {
+  margin-top: 14px !important;
+  color: #9a7ab4;
+  font-size: .82rem;
+  font-weight: 700;
+}
+
+.stage-highlight__performers {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.stage-highlight-performer {
+  padding: 16px;
+  border: 1px solid rgba(220, 79, 137, .22);
+  border-radius: 14px 5px 14px 5px;
+  background: rgba(255, 253, 251, .8);
+}
+
+.stage-highlight-performer img {
+  display: block;
+  width: 100%;
+  height: 200px;
+  border-radius: 10px 3px 10px 3px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(22, 142, 172, .16);
+}
+
+.stage-highlight-performer h4 {
+  margin: 10px 0 4px;
+  color: var(--teal-dark);
+  font-size: .96rem;
+}
+
+.stage-highlight-performer p {
+  margin: 0;
+  font-size: .8rem;
+  line-height: 1.6;
+}
+
+.stage-highlight__pr {
+  line-height: 1.9;
+}
+
+.stage-highlight__photos {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.stage-highlight__photos img {
+  display: block;
+  width: 100%;
+  height: 260px;
+  border-radius: 12px 4px 12px 4px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(22, 142, 172, .16);
+}
+
 .stage-program-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
