@@ -18,6 +18,16 @@
     document.head.appendChild(donationLayoutStyle);
   }
 
+  if (window.location.pathname.endsWith('/stage.html')) {
+    var stageStyle = document.createElement('link');
+    stageStyle.rel = 'stylesheet';
+    stageStyle.href = 'stage.css';
+    document.head.appendChild(stageStyle);
+    var stageScript = document.createElement('script');
+    stageScript.src = 'stage.js';
+    document.head.appendChild(stageScript);
+  }
+
   var footer = document.querySelector('.site-footer');
   document.querySelectorAll('.site-nav a[href="donation.html"]').forEach(function (link) {
     link.textContent = 'SUPPORT';
