@@ -5,6 +5,14 @@ main.page-shell:has(.donation-letter) > .card > h2:first-child {
   overflow-wrap: anywhere !important;
 }
 
+body:has(.donation-letter) {
+  background: linear-gradient(135deg, #f6e2ec 0%, #e9f4f7 34%, #c5eaf4 72%, #a9dcea 100%) fixed !important;
+}
+
+body:has(.donation-letter) main.page-shell {
+  background: transparent !important;
+}
+
 @media (max-width: 760px) {
   main.page-shell:has(.donation-letter) > .section-heading h1 {
     max-width: 100% !important;

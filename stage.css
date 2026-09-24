@@ -1,3 +1,11 @@
+body:has(.stage-page) {
+  background: linear-gradient(135deg, #f6e2ec 0%, #e9f4f7 34%, #c5eaf4 72%, #a9dcea 100%) fixed !important;
+}
+
+body:has(.stage-page) main.page-shell {
+  background: transparent !important;
+}
+
 main.page-shell:has(.stage-page) {
   width: min(100% - 44px, 1040px);
   margin: 0 auto;
