@@ -47,7 +47,7 @@
   section.className = 'group-category local-festival-category';
   section.id = 'local-festival';
   section.innerHTML = '<div class="section-heading"><div><p class="eyebrow">AREA 03 / LOCAL FESTIVAL</p><h2>ごようたし横丁</h2></div><p>地域のお店や団体が集まる企画</p></div><div class="local-festival-grid">' + projects.map(function (project) {
-    return '<article class="local-festival-card"><img src="' + (iconPaths[project[0]] || 'assets/icon-nothing.png') + '" onerror="this.src=\'assets/icon-nothing.png\'" alt="' + project[0] + 'の写真"><h3>' + project[0] + '</h3><p>' + project[1].replace(/\n/g, '<br>') + '</p></article>';
+    return '<article class="local-festival-card"><img src="' + (iconPaths[project[0]] || 'assets/icon-nothing.png') + '" onerror="this.src=\'assets/icon-nothing.png\'" alt="' + project[0] + 'の写真"><div class="local-festival-card__body"><h3>' + project[0] + '</h3><p>' + project[1].replace(/\n/g, '<br>') + '</p></div></article>';
   }).join('') + '</div>';
   building.parentNode.insertBefore(section, building);
 }());
