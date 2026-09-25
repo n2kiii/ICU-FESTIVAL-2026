@@ -28,6 +28,16 @@
     document.head.appendChild(stageScript);
   }
 
+  if (window.location.pathname.endsWith('/groups.html')) {
+    var localFestivalStyle = document.createElement('link');
+    localFestivalStyle.rel = 'stylesheet';
+    localFestivalStyle.href = 'local-festival.css';
+    document.head.appendChild(localFestivalStyle);
+    var localFestivalScript = document.createElement('script');
+    localFestivalScript.src = 'local-festival.js';
+    document.head.appendChild(localFestivalScript);
+  }
+
   var footer = document.querySelector('.site-footer');
   document.querySelectorAll('.site-nav a[href="donation.html"]').forEach(function (link) {
     link.textContent = 'SUPPORT';
