@@ -172,6 +172,24 @@
   line-height: 1.5;
 }
 
+.main-building-project-title {
+  margin: 0 0 10px;
+  color: var(--rose);
+  font-family: var(--serif);
+  font-size: 1.02rem;
+  font-weight: 700;
+  line-height: 1.5;
+  white-space: pre-line;
+}
+
+.main-building-project-card > .main-building-project-fee {
+  margin: 10px 0 0;
+  color: var(--teal-dark);
+  font-size: .82rem;
+  font-weight: 800;
+  line-height: 1.5;
+}
+
 .map-section {
   display: none;
 }

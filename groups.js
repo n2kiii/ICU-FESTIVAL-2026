@@ -46,14 +46,14 @@ const floorData = {
 const mainBuildingProjects = {
   "1": [
     { room: "101", group: "筝曲部生田流如月会", pr: "日本の伝統楽器お箏にふれて、和の音色と伝統文化の魅力を体験してみませんか？" },
-    { room: "102", group: "本企　子ども企画　縁日", pr: "縁日に加え、今年からの新企画のカラオケ、心理学実験やAI体験会など、幅広い方々にお楽しみいただける企画が盛りだくさん！是非ご家族、友達とお越しください！" },
+    { room: "102", group: "本企　子ども企画　縁日", pr: "輪投げや10秒ぴったりチャレンジ、巨大ジェンガなど、ここでしか味わえないアクティビティを楽しめます！景品もあるかも、？是非お越しください！", fee: "費用：200円" },
     { room: "124", group: "三鷹市総合保健センター", pr: "プレコンセプションケアに関する展示やシール投票、野菜スタンプ、握力測定を行います。見て、さわって、聞いて、自分の健康を振り返ってみましょう。" },
     { room: "125", group: "ICUグリークラブ", pr: "アカペラカフェでは、飲み物とお菓子を片手に歌を楽しめる！部員がユニットを組んで演奏するICU祭限りの様々なステージが、一日中続きます。ぜひお立ち寄りください！" },
     { room: "151", group: "本企 ワークショップ", pr: "本館にて子供から大人まで楽しめる　ビーズ・スライム・ボタン・カスタムボールペンの4つのワークショップを開催します。ぜひ本館1階151に足を運んでください。" },
-    { room: "152, 153", group: "本企　子ども心理学", pr: "縁日に加え、今年からの新企画のカラオケ、心理学実験やAI体験会など、幅広い方々にお楽しみいただける企画が盛りだくさん！是非ご家族、友達とお越しください！" },
+    { room: "152, 153", group: "探る！こころの不思議\n～遊んで学ぶ心理学～", pr: "クイズやゲームを通して、「こころ」のふしぎな働きを体験してみよう！フォトスポットや記念品もあるよ！" },
     { room: "155", group: "本企　占い企画", pr: "運勢をテーマにして占いやおみくじの販売を行う、ID30のメンバーだけでゼロから作り上げた新企画です！学生だけでなくICU祭に来てくださる全ての方に楽しんでいただける企画です✨" },
-    { room: "157", group: "本企　子ども企画　カラオケ", pr: "縁日に加え、今年からの新企画のカラオケ、心理学実験やAI体験会など、幅広い方々にお楽しみいただける企画が盛りだくさん！是非ご家族、友達とお越しください！" },
-    { room: "173", group: "本企　子ども企画 AI", pr: "縁日に加え、今年からの新企画のカラオケ、心理学実験やAI体験会など、幅広い方々にお楽しみいただける企画が盛りだくさん！是非ご家族、友達とお越しください！" },
+    { room: "157", group: "ICUのど自慢", pr: "新企画！！あなたの歌声を聴かせて下さい。ICU初のカラオケ大会を本館一階にて開催いたします！本格カラオケ機材にてどんな曲でも、どなたでも、思う存分スター気分に！" },
+    { room: "173", group: "ICU AIパビリオン", pr: "4つのゾーンに分かれたパビリオン！AIロボット体験やAIゲーム制作、さらに有名インフルエンサーによる講演を用意しております！AIに、出会い直す2日間にしませんか？" },
     { room: "176", group: "本企　アカデミック企画　Sakura Bridges of Hope", pr: "60年以上にわたり、友情と和解の象徴として桜を世界へ届け続けてきた浅利政俊氏。その「桜外交」の物語と、ウクライナの子どもたちが描いた桜の絵画を通して、平和への想いに触れる体験型展示です。あなた自身の平和へのメッセージを「ピースツリー」に託しませんか？" }
   ],
   "2": [
@@ -63,7 +63,7 @@ const mainBuildingProjects = {
     { room: "223", group: "国際基督教大学吹奏楽部", pr: "今夜限りのスペシャルオープン。ここでのみ味わえるあなただけの一杯。BRASSの奏でるハーモニーをご賞味あれ。" },
     { room: "252", group: "SUBARU企画", pr: "SUBARUとコラボしたモノづくり企画！クルマの仕組みを楽しく学ぼう！さらに今年は、スバル東京レーシング協力のもと、レーシングカーの試乗体験も開催！" },
     { room: "253", group: "本企　キミがDJ! こどもラジオ局", pr: "ここはこどもラジオ局。みんながラジオのMC！マイクを通じて気になる日常の”なぜ？”を教授に聞いてみよう！" },
-    { room: "254", group: "本企　子ども企画(ICU Park)", pr: "縁日に加え、今年からの新企画のカラオケ、心理学実験やAI体験会など、幅広い方々にお楽しみいただける企画が盛りだくさん！是非ご家族、友達とお越しください！" },
+    { room: "254", group: "本企　子ども企画(ICU Park)", roomNote: "晴天時はまぬけ山で行います", pr: "木工遊びやソリ滑り、お絵描き広場、テントなど小さなお子様が楽しめる企画が盛りだくさん！！豊かな自然の中で思う存分楽しめます✨" },
     { room: "273", group: "ICU Compost", pr: "私たちは、学内の寮の生ごみを堆肥化するコンポストの団体です！活動内容についての展示を行うので、初めてコンポストを聞いた方も、興味がある方もぜひお越しください" },
     { room: "274", group: "ICU落語研究会", pr: "落語が初めての方でも楽しみやすい公演です！ふらっと立ち寄って、ひと笑いしていきませんか？1日目と2日目では公演内容も異なりますので、ぜひ両日お越しください！" },
     { room: "275", group: "ICU人形劇研究会ぱぺっと", pr: "ICUで60年以上前から活動している人形劇サークル、ぱぺっとが送る楽しい人形劇。お子様連れにもおすすめです。登場する人形たちはなんと、すべて手作り！ICUに昔から住んでいる可愛くてヘンテコな仲間たちに、ぜひ会いにきてください！" },
@@ -114,11 +114,14 @@ const mainBuildingIconPaths = {
 };
 
 function renderMainBuildingProjectCard(project, floor) {
-  const roomNote = project.room === "252"
-    ? `<span class="main-building-room-note">晴天時は旧本部棟前で行います</span>`
+  const roomNote = project.roomNote || (project.room === "252" ? "晴天時は旧本部棟前で行います" : "");
+  const roomNoteMarkup = roomNote
+    ? `<span class="main-building-room-note">${roomNote}</span>`
     : "";
   const icon = project.icon || mainBuildingIconPaths[project.room] || "assets/icon-nothing.png";
-  return `<article class="outdoor-project-card main-building-project-card main-building-project-card--floor-${floor}"><div class="outdoor-project-card__top"><div class="main-building-room-label"><span class="tent-number room-number">${formatMainBuildingRoom(project.room)}</span>${roomNote}</div><img class="outdoor-project-card__icon" src="${icon}" alt="${project.group}のアイコン"></div><h4>${project.group}</h4><p>${project.pr}</p></article>`;
+  const feeMarkup = project.fee ? `<p class="main-building-project-fee">${project.fee}</p>` : "";
+  const groupMarkup = project.group.replace(/\n/g, "<br>");
+  return `<article class="outdoor-project-card main-building-project-card main-building-project-card--floor-${floor}"><div class="outdoor-project-card__top"><div class="main-building-room-label"><span class="tent-number room-number">${formatMainBuildingRoom(project.room)}</span>${roomNoteMarkup}</div><img class="outdoor-project-card__icon" src="${icon}" alt="${project.group}のアイコン"></div><h4>${groupMarkup}</h4><p>${project.pr}</p>${feeMarkup}</article>`;
 }
 
 function renderMainBuildingCards(floor) {
