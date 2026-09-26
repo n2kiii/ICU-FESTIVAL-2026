@@ -43,6 +43,125 @@ const floorData = {
   ]
 };
 
+const mainBuildingProjects = {
+  "1": [
+    { room: "101", group: "筝曲部生田流如月会", pr: "日本の伝統楽器お箏にふれて、和の音色と伝統文化の魅力を体験してみませんか？" },
+    { room: "102", group: "本企　子ども企画　縁日", pr: "縁日に加え、今年からの新企画のカラオケ、心理学実験やAI体験会など、幅広い方々にお楽しみいただける企画が盛りだくさん！是非ご家族、友達とお越しください！" },
+    { room: "124", group: "三鷹市総合保健センター", pr: "プレコンセプションケアに関する展示やシール投票、野菜スタンプ、握力測定を行います。見て、さわって、聞いて、自分の健康を振り返ってみましょう。" },
+    { room: "125", group: "ICUグリークラブ", pr: "アカペラカフェでは、飲み物とお菓子を片手に歌を楽しめる！部員がユニットを組んで演奏するICU祭限りの様々なステージが、一日中続きます。ぜひお立ち寄りください！" },
+    { room: "151", group: "本企 ワークショップ", pr: "本館にて子供から大人まで楽しめる　ビーズ・スライム・ボタン・カスタムボールペンの4つのワークショップを開催します。ぜひ本館1階151に足を運んでください。" },
+    { room: "152, 153", group: "本企　子ども心理学", pr: "縁日に加え、今年からの新企画のカラオケ、心理学実験やAI体験会など、幅広い方々にお楽しみいただける企画が盛りだくさん！是非ご家族、友達とお越しください！" },
+    { room: "155", group: "本企　占い企画", pr: "運勢をテーマにして占いやおみくじの販売を行う、ID30のメンバーだけでゼロから作り上げた新企画です！学生だけでなくICU祭に来てくださる全ての方に楽しんでいただける企画です✨" },
+    { room: "157", group: "本企　子ども企画　カラオケ", pr: "縁日に加え、今年からの新企画のカラオケ、心理学実験やAI体験会など、幅広い方々にお楽しみいただける企画が盛りだくさん！是非ご家族、友達とお越しください！" },
+    { room: "173", group: "本企　子ども企画 AI", pr: "縁日に加え、今年からの新企画のカラオケ、心理学実験やAI体験会など、幅広い方々にお楽しみいただける企画が盛りだくさん！是非ご家族、友達とお越しください！" },
+    { room: "176", group: "本企　アカデミック企画　Sakura Bridges of Hope", pr: "60年以上にわたり、友情と和解の象徴として桜を世界へ届け続けてきた浅利政俊氏。その「桜外交」の物語と、ウクライナの子どもたちが描いた桜の絵画を通して、平和への想いに触れる体験型展示です。あなた自身の平和へのメッセージを「ピースツリー」に託しませんか？" }
+  ],
+  "2": [
+    { room: "202", group: "美術愛好会", pr: "こんにちは！美術愛好会です！個性豊かな部員が描いたイラストの展示や、ハンドメイド作品・アクリルチャーム・ステッカーの販売をいたします。魚釣り・ガチャなどのミニゲーム、レジン作成体験といったワークショップも予定しております！家族連れの方もぜひ気軽にご参加ください♪" },
+    { room: "204", group: "国際基督教大学書道部", pr: "部員それぞれの個性が詰まった、多様な書道作品を展示しています。実際に筆を執って書道を楽しめる体験コーナーも開催中！初心者の方やお子様も大歓迎です！" },
+    { room: "205", group: "お笑い研究会", pr: "漫才やコントはもちろん、昨年人気だった観客参加型大喜利を今年も行います。皆様の部員超えの回答をお待ちしています！入退場自由ですのでお気軽にお越しください！" },
+    { room: "223", group: "国際基督教大学吹奏楽部", pr: "今夜限りのスペシャルオープン。ここでのみ味わえるあなただけの一杯。BRASSの奏でるハーモニーをご賞味あれ。" },
+    { room: "252", group: "SUBARU企画", pr: "SUBARUとコラボしたモノづくり企画！クルマの仕組みを楽しく学ぼう！さらに今年は、スバル東京レーシング協力のもと、レーシングカーの試乗体験も開催！" },
+    { room: "253", group: "本企　キミがDJ! こどもラジオ局", pr: "ここはこどもラジオ局。みんながラジオのMC！マイクを通じて気になる日常の”なぜ？”を教授に聞いてみよう！" },
+    { room: "254", group: "本企　子ども企画(ICU Park)", pr: "縁日に加え、今年からの新企画のカラオケ、心理学実験やAI体験会など、幅広い方々にお楽しみいただける企画が盛りだくさん！是非ご家族、友達とお越しください！" },
+    { room: "273", group: "ICU Compost", pr: "私たちは、学内の寮の生ごみを堆肥化するコンポストの団体です！活動内容についての展示を行うので、初めてコンポストを聞いた方も、興味がある方もぜひお越しください" },
+    { room: "274", group: "ICU落語研究会", pr: "落語が初めての方でも楽しみやすい公演です！ふらっと立ち寄って、ひと笑いしていきませんか？1日目と2日目では公演内容も異なりますので、ぜひ両日お越しください！" },
+    { room: "275", group: "ICU人形劇研究会ぱぺっと", pr: "ICUで60年以上前から活動している人形劇サークル、ぱぺっとが送る楽しい人形劇。お子様連れにもおすすめです。登場する人形たちはなんと、すべて手作り！ICUに昔から住んでいる可愛くてヘンテコな仲間たちに、ぜひ会いにきてください！" },
+    { room: "276", group: "ICUかるたサークル", pr: "「ちはやふる」でお馴染みの競技かるたを体験していただけます✨初見の方も経験者の方も、ICUかるたサークル復活後初の文化祭出展にぜひご来場ください‼︎" }
+  ],
+  "3": [
+    { room: "3階ラウンジ", group: "本企　「キリスト教、わからない人へ」（キリスト教企画）", pr: "キリスト教をまだ知らない人へ向けた、キリスト教を「知る・出会う」ことのできる常設展示です。クリスマス、イースターなど身近なテーマからキリスト教についてもうちょっと深く知ってみませんか？" },
+    { room: "301", group: "Paper Miracles ICU", pr: "パキスタンの女性たちが古紙から作り上げたビーズアクセサリー等を販売します。パキスタンの女性たちによる手作り商品ペーパーミラクルズをご覧に、是非お立ち寄り下さい！" },
+    { room: "302", group: "本企　ICU自然ツアー", pr: "ICUキャンパスならではの植物や生き物を楽しみ、心も体もリフレッシュしましょう！！\n\nICUの自然観察指導員や、環境研究を行っているICU生の案内のもと、豊かなICUの自然を探検してみませんか？🏞️" },
+    { room: "303", group: "Japan ICU Foundation", pr: "世界の文化がICUに集まる2日間🌏\n\n食・文化・体験を通して、世界と出会う「JICUF International Day 2026」開催！" },
+    { room: "305", group: "ICUアーチェリー部", pr: "弓を引いて、的を射抜いてみませんか？🎯 初心者向けから本格的な弓まで体験できます！さらに高得点者には豪華景品も…！お子様から大人まで、ぜひ遊びに来てください！" },
+    { room: "308", group: "SDGs推進室", pr: "昨年好評のバンブーランタンワークショップに加え、サシェ販売と古着フリーテイク、自然班やフェアトレード班をはじめとする全5班による活動報告展示を行います！！" },
+    { room: "324", group: "ICU Rince", pr: "アイルランド音楽サークルRince(リンカ)です！歩き疲れたら、アイリッシュ音楽のセッションを聴きながら、ちょっと休憩しませんか？本館の教室で無印の音楽とともにお待ちしております！" },
+    { room: "351", group: "ハンドメイドサークル", pr: "手作りのアクセサリーやかわいい小物を販売しています！ぜひ見にきてください！" },
+    { room: "353", group: "CMS管弦楽団", pr: "CMS管弦楽団による「しむす喫茶」へようこそ！お菓子やジュースを楽しみながら、小編成アンサンブルやオーケストラの演奏を気軽にお楽しみいただけます♪" },
+    { room: "374", group: "ICUクラシックバレエサークル レカン", pr: "普段私たちがしているようなクラシックバレエのレッスン体験、また実際に舞台で使用するかわいい衣装を着ての撮影ができます♡" }
+  ],
+  "4": [
+    { room: "401", group: "Modern Music Society", pr: "どうもこんにちは！ICU Modern Music Society です！今年度のMMSはビッグバンド公演に加えてジャズ喫茶もオープンします！是非来てください！" },
+    { room: "426", group: "森オルガン受講生", pr: "本館4階にある森オルガンの受講生によるコンサートです。森有正記念オルガンの多彩な音色が奏でる素敵な一時をお過ごしください!" }
+  ]
+};
+
+function formatMainBuildingRoom(room) {
+  return room === "3階ラウンジ" ? room : `ROOM ${room}`;
+}
+
+const mainBuildingIconPaths = {
+  "101": "assets/room101.png",
+  "125": "assets/room125.png",
+  "202": "assets/room202.png",
+  "204": "assets/room204.JPG",
+  "205": "assets/room205.jpeg",
+  "223": "assets/room223.png",
+  "273": "assets/room273.jpg",
+  "274": "assets/room274.png",
+  "275": "assets/room275.png",
+  "301": "assets/room301.jpeg",
+  "303": "assets/room303.jpg",
+  "305": "assets/room305.jpeg",
+  "308": "assets/room308.png",
+  "324": "assets/room324.png",
+  "351": "assets/room351.jpg",
+  "353": "assets/room353.JPG",
+  "374": "assets/room374.jpg",
+  "401": "assets/room401.jpeg",
+  "426": "assets/room426.jpg"
+};
+
+function renderMainBuildingProjectCard(project, floor) {
+  const roomNote = project.room === "252"
+    ? `<span class="main-building-room-note">晴天時は旧本部棟前で行います</span>`
+    : "";
+  const icon = project.icon || mainBuildingIconPaths[project.room] || "assets/icon-nothing.png";
+  return `<article class="outdoor-project-card main-building-project-card main-building-project-card--floor-${floor}"><div class="outdoor-project-card__top"><div class="main-building-room-label"><span class="tent-number room-number">${formatMainBuildingRoom(project.room)}</span>${roomNote}</div><img class="outdoor-project-card__icon" src="${icon}" alt="${project.group}のアイコン"></div><h4>${project.group}</h4><p>${project.pr}</p></article>`;
+}
+
+function renderMainBuildingCards(floor) {
+  const category = document.querySelector("#main-building");
+  const projectsForFloor = mainBuildingProjects[floor] || [];
+  if (!category || !projectsForFloor.length) return;
+  const existingGrid = category.querySelector(".main-building-project-grid");
+  if (existingGrid) existingGrid.remove();
+  const grid = document.createElement("div");
+  grid.className = "main-building-project-grid";
+  grid.innerHTML = projectsForFloor.map((project) => renderMainBuildingProjectCard(project, floor)).join("");
+  category.append(grid);
+}
+
+function renderMainBuildingFloorNavigation() {
+  const category = document.querySelector("#main-building");
+  if (!category || category.querySelector(".main-building-floor-nav")) return;
+  const navigation = document.createElement("div");
+  navigation.className = "main-building-floor-nav";
+  const floorLabels = { "1": "1st", "2": "2nd", "3": "3rd", "4": "4th" };
+  navigation.innerHTML = ["1", "2", "3", "4"].map((floor) => `<a class="main-building-floor-nav__link main-building-floor-nav__link--floor-${floor}" href="#main-building-floor-${floor}">${floor}階 / ${floorLabels[floor]} floor</a>`).join("");
+  category.querySelector(".section-heading").insertAdjacentElement("afterend", navigation);
+  Object.keys(mainBuildingProjects).forEach((floor) => {
+    const grid = category.querySelector(".main-building-project-grid");
+    if (floor === "1") grid.id = "main-building-floor-1";
+    else {
+      const section = document.createElement("section");
+      section.className = "main-building-floor-section";
+      section.id = `main-building-floor-${floor}`;
+      section.innerHTML = `<div class="outdoor-list__heading"><span class="eyebrow">${floor}階 / ${floorLabels[floor]} floor</span><h3>本館${floor}階の企画</h3></div><div class="main-building-project-grid"></div>`;
+      category.append(section);
+      renderMainBuildingCardsForGrid(floor, section.querySelector(".main-building-project-grid"));
+    }
+  });
+}
+
+function renderMainBuildingCardsForGrid(floor, grid) {
+  grid.innerHTML = (mainBuildingProjects[floor] || []).map((project) => renderMainBuildingProjectCard(project, floor)).join("");
+}
+
+renderMainBuildingCards("1");
+renderMainBuildingFloorNavigation();
+
 const detail = document.querySelector("#project-detail");
 const map = document.querySelector(".campus-map");
 const floorTabs = document.querySelectorAll(".floor-tab");

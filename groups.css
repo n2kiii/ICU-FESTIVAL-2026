@@ -41,6 +41,137 @@
   box-shadow: 8px 8px 0 rgba(220, 79, 137, .12);
 }
 
+.group-category#main-building::after {
+  display: none;
+}
+
+.main-building-project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.main-building-floor-nav {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  margin: 0 0 24px;
+}
+
+.main-building-floor-nav a {
+  padding: 14px 12px;
+  border: 1px solid transparent;
+  color: var(--teal-dark);
+  font-family: var(--serif);
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  transition: transform .2s ease, box-shadow .2s ease, filter .2s ease;
+}
+
+.main-building-floor-nav__link--floor-1 {
+  border-color: rgba(220, 79, 137, .28) !important;
+  background: #fff2f6 !important;
+  box-shadow: 4px 5px 0 rgba(220, 79, 137, .13);
+}
+
+.main-building-floor-nav__link--floor-2 {
+  border-color: rgba(205, 163, 67, .3) !important;
+  background: #fff7df !important;
+  box-shadow: 4px 5px 0 rgba(205, 163, 67, .14);
+}
+
+.main-building-floor-nav__link--floor-3 {
+  border-color: rgba(70, 138, 185, .28) !important;
+  background: #eef7ff !important;
+  box-shadow: 4px 5px 0 rgba(70, 138, 185, .13);
+}
+
+.main-building-floor-nav__link--floor-4 {
+  border-color: rgba(87, 151, 98, .28) !important;
+  background: #eff8ef !important;
+  box-shadow: 4px 5px 0 rgba(87, 151, 98, .13);
+}
+
+.main-building-floor-nav__link:hover,
+.main-building-floor-nav__link:focus-visible {
+  filter: saturate(1.12);
+  transform: translateY(-3px);
+}
+
+.main-building-floor-section {
+  scroll-margin-top: 100px;
+  margin-top: 42px;
+}
+
+.main-building-project-card {
+  border: 0;
+  border-radius: 16px 16px 5px 16px;
+  min-height: 300px;
+  box-shadow: 7px 8px 0 rgba(22, 142, 172, .13);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.main-building-project-card.main-building-project-card--floor-1 {
+  background: #fff2f6;
+  box-shadow: 7px 8px 0 rgba(220, 79, 137, .15);
+}
+
+.main-building-project-card.main-building-project-card--floor-2 {
+  background: #fff7df;
+  box-shadow: 7px 8px 0 rgba(205, 163, 67, .16);
+}
+
+.main-building-project-card.main-building-project-card--floor-3 {
+  background: #eef7ff;
+  box-shadow: 7px 8px 0 rgba(70, 138, 185, .15);
+}
+
+.main-building-project-card.main-building-project-card--floor-4 {
+  background: #eff8ef;
+  box-shadow: 7px 8px 0 rgba(87, 151, 98, .15);
+}
+
+.main-building-project-card:hover {
+  transform: translateY(-5px) rotate(-.35deg);
+}
+
+.main-building-project-card--floor-1:hover {
+  box-shadow: 7px 13px 0 rgba(220, 79, 137, .2);
+}
+
+.main-building-project-card--floor-2:hover {
+  box-shadow: 7px 13px 0 rgba(205, 163, 67, .21);
+}
+
+.main-building-project-card--floor-3:hover {
+  box-shadow: 7px 13px 0 rgba(70, 138, 185, .2);
+}
+
+.main-building-project-card--floor-4:hover {
+  box-shadow: 7px 13px 0 rgba(87, 151, 98, .2);
+}
+
+.main-building-project-card .room-number {
+  border-radius: 999px;
+}
+
+.main-building-room-label {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 7px;
+}
+
+.main-building-room-note {
+  max-width: 170px;
+  color: var(--rose);
+  font-size: .72rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
 .map-section {
   display: none;
 }
@@ -1195,6 +1326,21 @@ rect.is-clickable-room:focus {
     padding: 4px 5px;
   }
 
+  .main-building-project-card .room-number {
+    width: auto;
+    height: auto;
+    min-height: 0;
+    flex: 0 0 auto;
+    align-self: flex-start;
+    padding: 3px 6px;
+    border-radius: 999px;
+    font-size: .52rem;
+    line-height: 1.2;
+    letter-spacing: .04em;
+    box-sizing: border-box;
+    aspect-ratio: auto;
+  }
+
   .outdoor-project-card h4,
   #outdoor-sweets .outdoor-project-card h4,
   #outdoor-food .outdoor-project-card h4,
@@ -1215,6 +1361,19 @@ rect.is-clickable-room:focus {
   .outdoor-project-card > p:last-child {
     font-size: .72rem;
     line-height: 1.55;
+  }
+
+  .main-building-project-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .main-building-floor-nav {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .main-building-project-card {
+    min-height: 0;
   }
 
   .map-section {
