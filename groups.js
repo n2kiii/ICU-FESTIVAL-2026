@@ -121,7 +121,7 @@ function renderMainBuildingProjectCard(project, floor) {
   const icon = project.icon || mainBuildingIconPaths[project.room] || "assets/icon-nothing.png";
   const feeMarkup = project.fee ? `<p class="main-building-project-fee">${project.fee}</p>` : "";
   const groupMarkup = project.group.replace(/\n/g, "<br>");
-  return `<article class="outdoor-project-card main-building-project-card main-building-project-card--floor-${floor}"><div class="outdoor-project-card__top"><div class="main-building-room-label"><span class="tent-number room-number">${formatMainBuildingRoom(project.room)}</span>${roomNoteMarkup}</div><img class="outdoor-project-card__icon" src="${icon}" alt="${project.group}のアイコン"></div><h4>${groupMarkup}</h4><p>${project.pr}</p>${feeMarkup}</article>`;
+  return `<article class="outdoor-project-card main-building-project-card main-building-project-card--floor-${floor}"><div class="outdoor-project-card__top"><div class="main-building-room-label"><span class="tent-number room-number">${formatMainBuildingRoom(project.room)}</span>${roomNoteMarkup}</div><img class="outdoor-project-card__icon" src="${icon}" alt="${project.group}のアイコン"></div><h4>${groupMarkup}</h4><p class="main-building-project-pr">${project.pr}</p>${feeMarkup}</article>`;
 }
 
 function renderMainBuildingCards(floor) {

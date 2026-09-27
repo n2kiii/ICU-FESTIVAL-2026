@@ -58,7 +58,7 @@
   var weatherButtons = main.querySelectorAll('.stage-weather__button');
 
   function setScheduleImage(weather) {
-    scheduleImage.src = weather === 'sunny' ? 'assets/stage-schedule-sunny.jpg' : 'assets/stage-schedule-rainy.jpg';
+    scheduleImage.src = weather === 'sunny' ? 'assets/sunny%20schedule.png' : 'assets/rainy%20schedule.png';
   }
 
   weatherButtons.forEach(function (button) {
