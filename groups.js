@@ -364,3 +364,27 @@ if (outdoorSection) {
 
   outdoorSection.innerHTML = `<div class="section-heading"><div><p class="eyebrow">OUTDOOR TENTS</p><h2>屋外テント企画</h2></div><p>カテゴリを選ぶと、その企画一覧を確認できます。</p></div><div class="outdoor-category-grid">${outdoorCategoryData.map((category) => `<a class="outdoor-category" href="#outdoor-${category.id}"><span class="outdoor-category__number">${category.number}</span><h3>${category.name}</h3><p>${category.description}</p><span class="outdoor-category__link">VIEW PROJECTS →</span></a>`).join("")}</div>${outdoorCategoryData.map((category) => `<section class="outdoor-list" id="outdoor-${category.id}"><div class="outdoor-list__heading"><span class="eyebrow">${category.number} / ${category.name}</span><h3>${category.name}の企画</h3></div><div class="outdoor-project-list">${category.projects ? category.projects.slice().sort((firstProject, secondProject) => Number.parseInt(firstProject.tent.replace(/\D/g, ""), 10) - Number.parseInt(secondProject.tent.replace(/\D/g, ""), 10)).map((project) => `<article class="outdoor-project-card"><div class="outdoor-project-card__top"><span class="tent-number">${normalizeTentLabel(project.tent)}</span><img class="outdoor-project-card__icon" src="${project.icon || "assets/icon-nothing.png"}" alt="${project.group}のアイコン"></div><h4>${project.group}</h4><p class="outdoor-project-card__title">${project.title || "企画名"}</p><p>${project.pr}</p></article>`).join("") : `<article class="outdoor-project-placeholder"><span>PROJECTS</span><h4>企画情報を準備中</h4><p>このカテゴリの企画内容を受け取り次第、ここに一覧で掲載します。</p></article>`}</div></section>`).join("")}`;
 }
+
+const groupsPage = document.querySelector(".groups-page");
+if (groupsPage) {
+  const searchPanel = document.createElement("section");
+  searchPanel.className = "groups-search";
+  searchPanel.setAttribute("aria-labelledby", "groups-search-title");
+  searchPanel.innerHTML = `<h2 id="groups-search-title">企画を検索</h2><label for="groups-search-input">団体名・企画名・キーワード</label><div class="groups-search__row"><input id="groups-search-input" type="search" placeholder="例：チュロス、音楽、ICU" autocomplete="off"><span class="groups-search__count" aria-live="polite"></span></div>`;
+  groupsPage.querySelector(".groups-branches").insertAdjacentElement("afterend", searchPanel);
+
+  const searchInput = searchPanel.querySelector("#groups-search-input");
+  const resultCount = searchPanel.querySelector(".groups-search__count");
+  const searchableCards = () => [...groupsPage.querySelectorAll(".outdoor-project-card, .main-building-project-card")];
+  const updateSearchResults = () => {
+    const query = searchInput.value.trim().toLocaleLowerCase();
+    let visibleCount = 0;
+    searchableCards().forEach((card) => {
+      const matches = !query || card.textContent.toLocaleLowerCase().includes(query);
+      card.hidden = !matches;
+      if (matches) visibleCount += 1;
+    });
+    resultCount.textContent = query ? `${visibleCount}件` : "";
+  };
+  searchInput.addEventListener("input", updateSearchResults);
+}
