@@ -329,6 +329,59 @@ main.page-shell:has(.stage-page) {
     gap: 12px;
   }
 
+  .stage-highlight__performers {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-top: 16px;
+  }
+
+  .stage-highlight-performer {
+    display: grid;
+    grid-template-columns: 82px minmax(0, 1fr);
+    grid-template-rows: auto 1fr;
+    column-gap: 12px;
+    align-items: start;
+    padding: 12px;
+  }
+
+  .stage-highlight-performer img {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    width: 82px;
+    height: 82px;
+    border-radius: 12px 4px 12px 4px;
+    object-position: center;
+  }
+
+  .stage-highlight-performer h4 {
+    grid-column: 2;
+    margin: 2px 0 5px;
+    font-size: .9rem;
+    line-height: 1.35;
+    overflow-wrap: anywhere;
+  }
+
+  .stage-highlight-performer p {
+    grid-column: 2;
+    font-size: .76rem;
+    line-height: 1.55;
+  }
+
+  .stage-highlight__photos {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin-top: 16px;
+  }
+
+  .stage-highlight__photos img {
+    width: 100%;
+    height: auto;
+    max-height: 64vh;
+    aspect-ratio: 4 / 3;
+    object-fit: contain;
+    background: rgba(255, 255, 255, .72);
+  }
+
   .stage-program-card {
     min-height: 0;
     padding: 16px;
