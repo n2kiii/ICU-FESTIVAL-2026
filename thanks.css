@@ -1,3 +1,9 @@
+html:has(.thanks-page),
+body:has(.thanks-page),
+.thanks-page {
+  background: linear-gradient(135deg, #f6e2ec 0%, #e9f4f7 34%, #c5eaf4 72%, #a9dcea 100%) fixed !important;
+}
+
 .thanks-page {
   max-width: 1040px;
   margin: 0 auto;
@@ -21,8 +27,78 @@
   white-space: nowrap;
 }
 
+.thanks-sponsors {
+  margin-top: 58px;
+  padding: 34px clamp(18px, 4vw, 42px) 42px;
+  border: 1px solid rgba(22, 142, 172, .2);
+  border-radius: 24px 8px 24px 8px;
+  background: rgba(255, 255, 255, .78);
+  box-shadow: 8px 9px 0 rgba(220, 79, 137, .1);
+}
+
+.thanks-sponsors > .eyebrow {
+  margin: 0 0 6px;
+  color: var(--rose);
+  font-size: .72rem;
+  font-weight: 800;
+  letter-spacing: .14em;
+  text-align: center;
+}
+
+.thanks-sponsors h2 {
+  margin: 0 0 26px;
+  color: var(--teal-dark);
+  font-family: var(--serif);
+  font-size: clamp(1.35rem, 3vw, 2rem);
+  text-align: center;
+}
+
+.thanks-logo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.thanks-logo-grid figure {
+  display: grid;
+  min-height: 150px;
+  margin: 0;
+  padding: 18px;
+  place-items: center;
+  border: 1px solid rgba(22, 142, 172, .14);
+  border-radius: 12px 4px 12px 4px;
+  background: rgba(255, 255, 255, .9);
+}
+
+.thanks-logo-grid img {
+  display: block;
+  width: 100%;
+  max-width: 240px;
+  max-height: 105px;
+  object-fit: contain;
+}
+
 @media (max-width: 760px) {
   .thanks-page {
     padding: 88px 14px 84px;
+  }
+
+  .thanks-sponsors {
+    margin-top: 40px;
+    padding: 26px 12px 30px;
+  }
+
+  .thanks-logo-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .thanks-logo-grid figure {
+    min-height: 112px;
+    padding: 10px;
+  }
+
+  .thanks-logo-grid img {
+    max-height: 78px;
   }
 }
