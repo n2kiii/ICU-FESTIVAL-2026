@@ -48,11 +48,11 @@
 
   main.innerHTML = '<section class="stage-page"><div class="stage-page__heading"><p class="eyebrow">STAGE PROGRAM</p><h1>STAGE</h1><p>天候を選ぶと当日のステージスケジュールを確認できます。</p></div><div class="stage-weather" role="group" aria-label="天候を選択"><button class="stage-weather__button is-active" type="button" data-weather="sunny">晴れ</button><button class="stage-weather__button" type="button" data-weather="rainy">雨</button></div><div class="stage-schedule"><img class="stage-schedule__image" alt="ステージスケジュール"></div><div class="stage-highlight-nav">' + stageHighlights.map(function (highlight) {
     return '<a class="stage-highlight-button" href="#' + highlight.anchor + '">' + highlight.label + '</a>';
-  }).join('') + '</div>' + stageHighlights.map(function (highlight) {
+  }).join('') + '<a class="stage-highlight-button" href="#stage-performers">出演団体情報</a></div>' + stageHighlights.map(function (highlight) {
     return '<section class="stage-highlight" id="' + highlight.anchor + '"><p class="eyebrow">' + highlight.label + '</p><h2>' + highlight.group + '</h2><p class="stage-highlight__title">' + highlight.title + '</p><p class="stage-highlight__pr">' + highlight.pr.replace(/\n/g, '<br>') + '</p>' + (highlight.note ? '<p class="stage-highlight__note">' + highlight.note + '</p>' : '') + renderPerformers(highlight.performers) + renderPhotos(highlight.photos) + '</section>';
-  }).join('') + '<div class="stage-program-grid">' + stagePrograms.map(function (program) {
+  }).join('') + '<section class="stage-program-section" id="stage-performers"><div class="stage-program-section__heading"><p class="eyebrow">PERFORMERS</p><h2>出演団体情報</h2></div><div class="stage-program-grid">' + stagePrograms.map(function (program) {
     return '<article class="stage-program-card"><img class="stage-program-card__icon" src="' + (program.icon || 'assets/icon-nothing.png') + '" onerror="this.src=\'assets/icon-nothing.png\'" alt="' + program.group + 'のアイコン"><h3>' + program.group + '</h3><p class="stage-program-card__title">' + program.title + '</p><p>' + program.pr + '</p></article>';
-  }).join('') + '</div></section>';
+  }).join('') + '</div></section></section>';
 
   var scheduleImage = main.querySelector('.stage-schedule__image');
   var weatherButtons = main.querySelectorAll('.stage-weather__button');

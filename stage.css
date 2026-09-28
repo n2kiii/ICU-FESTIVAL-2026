@@ -93,6 +93,30 @@ main.page-shell:has(.stage-page) {
   box-shadow: 0 5px 0 rgba(154, 122, 180, .28);
 }
 
+.stage-program-section {
+  scroll-margin-top: 100px;
+  margin-top: 52px;
+}
+
+.stage-program-section__heading {
+  margin-bottom: 18px;
+  text-align: center;
+}
+
+.stage-program-section__heading .eyebrow {
+  margin: 0 0 4px;
+  color: var(--rose);
+  font-weight: 800;
+  letter-spacing: .12em;
+}
+
+.stage-program-section__heading h2 {
+  margin: 0;
+  color: var(--teal-dark);
+  font-family: var(--serif);
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+}
+
 .stage-highlight {
   scroll-margin-top: 100px;
   margin-top: 22px;
