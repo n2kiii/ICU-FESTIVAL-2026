@@ -46,33 +46,32 @@ const floorData = {
 const mainBuildingProjects = {
   "1": [
     { room: "101", group: "筝曲部生田流如月会", pr: "日本の伝統楽器お箏にふれて、和の音色と伝統文化の魅力を体験してみませんか？" },
-    { room: "102", group: "本企　子ども企画　縁日", pr: "輪投げや10秒ぴったりチャレンジ、巨大ジェンガなど、ここでしか味わえないアクティビティを楽しめます！景品もあるかも、？是非お越しください！", fee: "費用：200円" },
+    { room: "102", group: "ICU祭実行委員会公式企画　縁日", pr: "輪投げや10秒ぴったりチャレンジ、巨大ジェンガなど、ここでしか味わえないアクティビティを楽しめます！景品もあるかも、？是非お越しください！", fee: "料金：200円" },
     { room: "124", group: "三鷹市総合保健センター", pr: "プレコンセプションケアに関する展示やシール投票、野菜スタンプ、握力測定を行います。見て、さわって、聞いて、自分の健康を振り返ってみましょう。" },
     { room: "125", group: "ICUグリークラブ", pr: "アカペラカフェでは、飲み物とお菓子を片手に歌を楽しめる！部員がユニットを組んで演奏するICU祭限りの様々なステージが、一日中続きます。ぜひお立ち寄りください！" },
-    { room: "151", group: "本企 ワークショップ", pr: "本館にて子供から大人まで楽しめる　ビーズ・スライム・ボタン・カスタムボールペンの4つのワークショップを開催します。ぜひ本館1階151に足を運んでください。" },
-    { room: "152, 153", group: "探る！こころの不思議\n～遊んで学ぶ心理学～", pr: "クイズやゲームを通して、「こころ」のふしぎな働きを体験してみよう！フォトスポットや記念品もあるよ！" },
-    { room: "155", group: "本企　占い企画", pr: "運勢をテーマにして占いやおみくじの販売を行う、ID30のメンバーだけでゼロから作り上げた新企画です！学生だけでなくICU祭に来てくださる全ての方に楽しんでいただける企画です✨" },
-    { room: "157", group: "ICUのど自慢", pr: "新企画！！あなたの歌声を聴かせて下さい。ICU初のカラオケ大会を本館一階にて開催いたします！本格カラオケ機材にてどんな曲でも、どなたでも、思う存分スター気分に！" },
-    { room: "173", group: "ICU AIパビリオン", pr: "4つのゾーンに分かれたパビリオン！AIロボット体験やAIゲーム制作、さらに有名インフルエンサーによる講演を用意しております！AIに、出会い直す2日間にしませんか？" },
-    { room: "176", group: "本企　アカデミック企画　Sakura Bridges of Hope", pr: "60年以上にわたり、友情と和解の象徴として桜を世界へ届け続けてきた浅利政俊氏。その「桜外交」の物語と、ウクライナの子どもたちが描いた桜の絵画を通して、平和への想いに触れる体験型展示です。あなた自身の平和へのメッセージを「ピースツリー」に託しませんか？" }
+    { room: "151", group: "ICU祭実行委員会公式企画　ワークショップ", pr: "今年は、子供から大人まで楽しめる、「ビーズ・スライム・ボタン・カスタムボールペン」の4つのワークショップを開催します！ガチャガチャもあるよ🌟", details: "＊体験内容によって料金が異なります。" },
+    { room: "152, 153", group: "探る！こころの不思議\n～遊んで学ぶ心理学～", pr: "クイズやゲームで、心理学を楽しく体験！\n\n「なんでこう思うの？」「どうして気づかなかった？」\n\nこころのふしぎを発見してみよう\n\nフォトスポットや記念品も用意しています！！" },
+    { room: "155", group: "ICU祭実行委員会公式企画　運命の30番地", pr: "運勢をテーマにして占いやおみくじの販売を行う、ID30のメンバーだけでゼロから作り上げた新企画！！学生だけでなくICU祭に来てくださる全ての方に楽しんでいただける企画となっています✨", details: "＊体験内容によって料金が異なります。" },
+    { room: "157", group: "ICU祭実行委員会公式企画　ICUのど自慢", pr: "今年度からの新企画！！あなたの歌声を聴かせて下さい。ICU初のカラオケ大会を本館一階にて開催いたします！本格カラオケ機材にてどんな曲でも、どなたでも、思う存分スター気分に！\n\nお子様から大人の方までどなたでもお越しください！！" },
+    { room: "173", group: "ICU祭実行委員会公式企画　ICU AIパビリオン", pr: "4つのゾーンに分かれたパビリオン！AIロボット体験やAIゲーム制作、さらに有名インフルエンサーによる講演を用意しております！AIに、出会い直す2日間にしませんか？" },
+    { room: "176", group: "Sakura Bridges of Hope", pr: "60年以上にわたり、友情と和解の象徴として桜を世界へ届け続けてきた浅利政俊氏。その「桜外交」の物語と、ウクライナの子どもたちが描いた桜の絵画を通して、平和への想いに触れる体験型展示です。あなた自身の平和へのメッセージを「ピースツリー」に託しませんか？" }
   ],
   "2": [
+    { room: "201", group: "ICU祭実行委員会公式企画 Welcome to ELA", pr: "ICUの授業ってどんな感じ？\n\n1年生必修の英語×ディスカッション型講義 ”ELA（English for Liberal Arts）” を、特別に体験できるチャンスです！\n\nICU生の登竜門、ひと足先に体験してみませんか？", details: "10/11・12 両日13:00〜", reservationUrl: "https://forms.gle/AurTBsvvgSSg9LvSA" },
     { room: "202", group: "美術愛好会", pr: "こんにちは！美術愛好会です！個性豊かな部員が描いたイラストの展示や、ハンドメイド作品・アクリルチャーム・ステッカーの販売をいたします。魚釣り・ガチャなどのミニゲーム、レジン作成体験といったワークショップも予定しております！家族連れの方もぜひ気軽にご参加ください♪" },
     { room: "204", group: "国際基督教大学書道部", pr: "部員それぞれの個性が詰まった、多様な書道作品を展示しています。実際に筆を執って書道を楽しめる体験コーナーも開催中！初心者の方やお子様も大歓迎です！" },
     { room: "205", group: "お笑い研究会", pr: "漫才やコントはもちろん、昨年人気だった観客参加型大喜利を今年も行います。皆様の部員超えの回答をお待ちしています！入退場自由ですのでお気軽にお越しください！" },
     { room: "223", group: "国際基督教大学吹奏楽部", pr: "今夜限りのスペシャルオープン。ここでのみ味わえるあなただけの一杯。BRASSの奏でるハーモニーをご賞味あれ。" },
-    { room: "252", group: "SUBARU企画", pr: "SUBARUとコラボしたモノづくり企画！クルマの仕組みを楽しく学ぼう！さらに今年は、スバル東京レーシング協力のもと、レーシングカーの試乗体験も開催！" },
-    { room: "253", group: "本企　キミがDJ! こどもラジオ局", pr: "ここはこどもラジオ局。みんながラジオのMC！マイクを通じて気になる日常の”なぜ？”を教授に聞いてみよう！" },
-    { room: "254", group: "本企　子ども企画(ICU Park)", roomNote: "晴天時はまぬけ山で行います", pr: "木工遊びやソリ滑り、お絵描き広場、テントなど小さなお子様が楽しめる企画が盛りだくさん！！豊かな自然の中で思う存分楽しめます✨" },
+    { room: "224", group: "ICU祭実行委員会公式企画　IBSトークセッション", pr: "現役ICU生によるリアルトーク！大学での学び、留学や寮生活まで、本音で語ってくれます。", details: "10/11・12 両日11:00〜" },
+    { room: "253", group: "ICU祭実行委員会公式企画　キミがDJ! こどもラジオ局", pr: "ここはこどもラジオ局。みんながラジオのMC！マイクを通じて気になる日常の”なぜ？”を教授に聞いてみよう！", fee: "料金：500円", details: "10/11・12（事前予約制）\n第一部 10:30〜11:00\n第二部 11:15〜11:45\n第三部 13:30〜14:00\n第四部 14:15〜14:45\n\n＊人数制限がございますが、観覧は予約なしでしていただけます\n＊体験中の会話は録音され、後日編集を行い、音声ファイルとして体験者の皆様にお渡しします。", reservationUrl: "https://forms.gle/AurTBsvvgSSg9LvSA" },
     { room: "273", group: "ICU Compost", pr: "私たちは、学内の寮の生ごみを堆肥化するコンポストの団体です！活動内容についての展示を行うので、初めてコンポストを聞いた方も、興味がある方もぜひお越しください" },
     { room: "274", group: "ICU落語研究会", pr: "落語が初めての方でも楽しみやすい公演です！ふらっと立ち寄って、ひと笑いしていきませんか？1日目と2日目では公演内容も異なりますので、ぜひ両日お越しください！" },
     { room: "275", group: "ICU人形劇研究会ぱぺっと", pr: "ICUで60年以上前から活動している人形劇サークル、ぱぺっとが送る楽しい人形劇。お子様連れにもおすすめです。登場する人形たちはなんと、すべて手作り！ICUに昔から住んでいる可愛くてヘンテコな仲間たちに、ぜひ会いにきてください！" },
     { room: "276", group: "ICUかるたサークル", pr: "「ちはやふる」でお馴染みの競技かるたを体験していただけます✨初見の方も経験者の方も、ICUかるたサークル復活後初の文化祭出展にぜひご来場ください‼︎" }
   ],
   "3": [
-    { room: "3階ラウンジ", group: "本企　「キリスト教、わからない人へ」（キリスト教企画）", pr: "キリスト教をまだ知らない人へ向けた、キリスト教を「知る・出会う」ことのできる常設展示です。クリスマス、イースターなど身近なテーマからキリスト教についてもうちょっと深く知ってみませんか？" },
+    { room: "3階ラウンジ", group: "ICU祭実行委員会公式企画　「キリスト教あるある」", pr: "キリスト教をまだ知らない人へ向けた、キリスト教を「知る・出会う」ことのできる常設展示です。\n\nクリスマス、イースターなど身近なテーマからキリスト教についてもうちょっと深く知ってみませんか？" },
     { room: "301", group: "Paper Miracles ICU", pr: "パキスタンの女性たちが古紙から作り上げたビーズアクセサリー等を販売します。パキスタンの女性たちによる手作り商品ペーパーミラクルズをご覧に、是非お立ち寄り下さい！" },
-    { room: "302", group: "本企　ICU自然ツアー", pr: "ICUキャンパスならではの植物や生き物を楽しみ、心も体もリフレッシュしましょう！！\n\nICUの自然観察指導員や、環境研究を行っているICU生の案内のもと、豊かなICUの自然を探検してみませんか？🏞️" },
     { room: "303", group: "Japan ICU Foundation", pr: "世界の文化がICUに集まる2日間🌏\n\n食・文化・体験を通して、世界と出会う「JICUF International Day 2026」開催！" },
     { room: "305", group: "ICUアーチェリー部", pr: "弓を引いて、的を射抜いてみませんか？🎯 初心者向けから本格的な弓まで体験できます！さらに高得点者には豪華景品も…！お子様から大人まで、ぜひ遊びに来てください！" },
     { room: "308", group: "SDGs推進室", pr: "昨年好評のバンブーランタンワークショップに加え、サシェ販売と古着フリーテイク、自然班やフェアトレード班をはじめとする全5班による活動報告展示を行います！！" },
@@ -120,8 +119,13 @@ function renderMainBuildingProjectCard(project, floor) {
     : "";
   const icon = project.icon || mainBuildingIconPaths[project.room] || "assets/icon-nothing.png";
   const feeMarkup = project.fee ? `<p class="main-building-project-fee">${project.fee}</p>` : "";
+  const detailsMarkup = project.details ? `<p class="main-building-project-details">${project.details.replace(/\n/g, "<br>")}</p>` : "";
+  const reservationMarkup = project.reservationUrl
+    ? `<a class="main-building-reservation-button" href="${project.reservationUrl}" target="_blank" rel="noopener noreferrer"><span class="main-building-reservation-button__label">事前予約は<br class="main-building-reservation-button__mobile-break">こちら</span><span class="main-building-reservation-button__heart" aria-hidden="true">♡</span></a>`
+    : "";
   const groupMarkup = project.group.replace(/\n/g, "<br>");
-  return `<article class="outdoor-project-card main-building-project-card main-building-project-card--floor-${floor}"><div class="outdoor-project-card__top"><div class="main-building-room-label"><span class="tent-number room-number">${formatMainBuildingRoom(project.room)}</span>${roomNoteMarkup}</div><img class="outdoor-project-card__icon" src="${icon}" alt="${project.group}のアイコン"></div><h4>${groupMarkup}</h4><p class="main-building-project-pr">${project.pr}</p>${feeMarkup}</article>`;
+  const prMarkup = project.pr.replace(/\n/g, "<br>");
+  return `<article class="outdoor-project-card main-building-project-card main-building-project-card--floor-${floor}"><div class="outdoor-project-card__top"><div class="main-building-room-label"><span class="tent-number room-number">${formatMainBuildingRoom(project.room)}</span>${roomNoteMarkup}${reservationMarkup}</div><img class="outdoor-project-card__icon" src="${icon}" alt="${project.group}のアイコン"></div><h4>${groupMarkup}</h4><p class="main-building-project-pr">${prMarkup}</p>${feeMarkup}${detailsMarkup}</article>`;
 }
 
 function renderMainBuildingCards(floor) {
