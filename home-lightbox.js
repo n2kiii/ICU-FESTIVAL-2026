@@ -1,7 +1,7 @@
 const timetableImage = document.querySelector(".bus-timetable img");
 
-const supportCardTitle = document.querySelector(".section--paper .link-card:nth-child(5) h3");
-const thanksCardTitle = document.querySelector(".section--paper .link-card:nth-child(6) h3");
+const supportCardTitle = document.querySelector('.section--paper .link-card[href="donation.html"] h3');
+const thanksCardTitle = document.querySelector('.section--paper .link-card[href="thanks.html"] h3');
 if (supportCardTitle) supportCardTitle.textContent = "ご支援のお願い";
 if (thanksCardTitle) thanksCardTitle.textContent = "SPECIAL THANKS";
 
