@@ -17,7 +17,7 @@
     { id: 'shamisen', group: '三味線くらぶ (長唄研究会)', title: '三味線LIVE', icon: 'assets/icon-shamisen.png', pr: '今年で創設51年を迎えました。三味線クラブです！10月11日13:30より、新D館多目的ホールにて長唄の演奏をお届けします。ぜひお立ち寄りください♪' },
     { id: 'db2', group: 'DB2', title: 'ボリウッドダンス', pr: 'インドでボリウッドダンスを習ったメンバーが主体のダンスグループです。インドのダンスをお楽しみください。' },
     { id: 'icu-musical', group: 'ICU歌劇団', title: '『夜明けを夢見て』コンサート', pr: 'ICU歌劇団による新作ミュージカル『夜明けを夢見て』本公演に先駆けて、制作発表会を兼ねたコンサートを行います♪ 完全オリジナル楽曲を初披露！乞うご期待！！' },
-    { id: 'icu-angels', group: 'チアリーディング部Angels', title: 'AngelsからCheer for you!', icon: 'assets/icon-icu-angels.jpg', pr: '皮様にたくさんのエールと感動をお届けできるよう日々練習に取り組んできました！！ICU祭だからこそできるpopで楽しい演技や、12月の大会で実際に行う演技を披露します✨チアリーディングを見たことがない方、Angelsに興味がある方、ぜひお越しください💖アホ山ステージで待ってます📣' },
+    { id: 'icu-angels', group: 'チアリーディング部Angels', title: 'AngelsからCheer for you!', icon: 'assets/icon-icu-angels.jpg', pr: '皆様にたくさんのエールと感動をお届けできるよう日々練習に取り組んできました！！ICU祭だからこそできるpopで楽しい演技や、12月の大会で実際に行う演技を披露します✨チアリーディングを見たことがない方、Angelsに興味がある方、ぜひお越しください💖アホ山ステージで待ってます📣' },
     { id: 'aikido', group: '心身統一合気道部', title: '心身統一合気道部 演武会', icon: 'assets/icon-aikido.jpg', pr: 'ICU心身統一合気道部です！今年も、現役部員たちが行う技のデモンストレーションである演武会を開催します。合気道や武道に少しでも興味がある方、ぜひご覚ください！' },
     { id: 'clumsy', group: 'The Clumsy Chorus', title: 'The Clumsy Chorus Gospel Live', icon: 'assets/icon-clumsy.jpeg', pr: '私たちThe Clumsy Chorusは、バンドとコーラスからなるゴスペルサークルです。私たちが作り上げる雰囲気を、ぜひ全身で感じてみてください！' },
     { id: 'nihonbuyo', group: 'ICU 日本舞踊研究会', title: 'ICU祭舞踊公演', pr: '着物や扇、長唄の音色とともに、美しく華やかな踊りをお届けします。日本舞踊を知らない方も楽しめる舞台です。日本の伝統芸能の魅力を、ぜひ間近で感じてください！' }
