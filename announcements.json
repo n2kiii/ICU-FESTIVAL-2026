@@ -1,8 +1,8 @@
 {
   "announcements": [
     {
-      "title": "TEST",
-      "message": "これはプッシュ通知のテストです！",
+      "title": "IMPORTANT",
+      "message": "ご来校の皆さまへ　公共交通機関でのご来校をお願いしております。お車でのご来校はご遠慮ください。",
       "notify": true
     }
   ]
