@@ -25,48 +25,24 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
       - name: Check announcement
         id: announcement
         shell: bash
         run: |
-          echo "GitHub event: ${{ github.event_name }}"
+          notify=$(jq -r '.announcements[0].notify // false' announcements.json)
+          title=$(jq -r '.announcements[0].title // "ICU FESTIVAL 2026"' announcements.json)
+          message=$(jq -r '.announcements[0].message // ""' announcements.json)
 
-          if [ "${{ github.event_name }}" = "push" ] && [ "${{ github.event.before }}" != "0000000000000000000000000000000000000000" ]; then
+          echo "notify=$notify"
+          echo "title=$title"
 
-            if git diff --name-only "${{ github.event.before }}" "${{ github.sha }}" | grep -qx "announcements.json"; then
-              echo "changed=true" >> "$GITHUB_OUTPUT"
-
-              notify=$(jq -r '.announcements[0].notify // false' announcements.json)
-              title=$(jq -r '.announcements[0].title // "ICU FESTIVAL 2026"' announcements.json)
-              message=$(jq -r '.announcements[0].message // ""' announcements.json)
-
-              echo "notify=$notify" >> "$GITHUB_OUTPUT"
-              echo "title=$title" >> "$GITHUB_OUTPUT"
-              echo "message=$message" >> "$GITHUB_OUTPUT"
-
-              echo "Announcement changed."
-              echo "Notify: $notify"
-              echo "Title: $title"
-
-            else
-              echo "changed=false" >> "$GITHUB_OUTPUT"
-              echo "notify=false" >> "$GITHUB_OUTPUT"
-
-              echo "announcements.json was not changed."
-            fi
-
-          else
-            echo "changed=false" >> "$GITHUB_OUTPUT"
-            echo "notify=false" >> "$GITHUB_OUTPUT"
-
-            echo "This is not a normal push event."
-          fi
+          echo "notify=$notify" >> "$GITHUB_OUTPUT"
+          echo "title=$title" >> "$GITHUB_OUTPUT"
+          echo "message=$message" >> "$GITHUB_OUTPUT"
 
       - name: Send OneSignal notification
-        if: ${{ steps.announcement.outputs.changed == 'true' && steps.announcement.outputs.notify == 'true' }}
+        if: ${{ steps.announcement.outputs.notify == 'true' }}
         env:
           ONESIGNAL_REST_API_KEY: ${{ secrets.ONESIGNAL_REST_API_KEY }}
           ONESIGNAL_APP_ID: 1b0e0935-72e0-4e25-b696-01b294373587
