@@ -63,7 +63,7 @@ jobs:
               --arg message "$NOTIFICATION_MESSAGE" \
               '{
                 app_id: $app_id,
-                included_segments: ["Subscribed Users"],
+                included_segments: ["All"],
                 headings: {en: $title, ja: $title},
                 contents: {en: $message, ja: $message},
                 url: "https://icu-fes.com/"
