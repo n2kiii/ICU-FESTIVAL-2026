@@ -1,3 +1,9 @@
 {
-  "announcements": []
+  "announcements": [
+    {
+      "title": "TEST",
+      "message": "これはプッシュ通知のテストです！",
+      "notify": true
+    }
+  ]
 }
