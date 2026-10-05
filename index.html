@@ -48,19 +48,32 @@
     .then(response => response.json())
     .then(data => {
       const list = document.getElementById("info-board-list");
+      const announcements = data.announcements || [];
 
-      if (!data.message) return;
+      if (announcements.length === 0) {
+        list.innerHTML = `
+          <li>
+            <time>NOTICE</time>
+            <span>現在お知らせはありません。</span>
+          </li>
+        `;
+        return;
+      }
 
-      const item = document.createElement("li");
-      const time = document.createElement("time");
-      const message = document.createElement("span");
+      list.innerHTML = "";
 
-      time.textContent = data.title || "NOTICE";
-      message.textContent = data.message;
+      announcements.forEach(item => {
+        const li = document.createElement("li");
+        const time = document.createElement("time");
+        const message = document.createElement("span");
 
-      item.appendChild(time);
-      item.appendChild(message);
-      list.replaceChildren(item);
+        time.textContent = item.title || "NOTICE";
+        message.textContent = item.message || "";
+
+        li.appendChild(time);
+        li.appendChild(message);
+        list.appendChild(li);
+      });
     })
     .catch(error => {
       console.error("Information Boardの読み込みに失敗しました:", error);
