@@ -1,18 +1,18 @@
 {
   "announcements": [
     {
-      "title": "TEST final",
-      "message": "届いてますかー！！！",
-      "notify": true
-    },
-    {
-      "title": "TEST 2",
-      "message": "これはプッシュ通知のテスト2です！",
+      "title": "",
+      "message": "",
       "notify": false
     },
     {
-      "title": "TEST",
-      "message": "これはプッシュ通知のテストです！",
+      "title": "IMPORTANT",
+      "message": "ただいまICU祭実行委員会のgmailに不具合が生じております。緊急のご連絡がある場合には、一般企画団体の皆さまは、団体企画向けInstagram(@icufes.dantai）のダイレクトメッセージ/その他のお問い合わせにつきましては、公式Instagram（＠icu_fes)のダイレクトメッセージまでご連絡ください。ご不便をおかけいたしますが、ご理解とご協力をお願いいたします。",
+      "notify": false
+    },
+    {
+      "title": "IMPORTANT",
+      "message": "ICU祭当日は公共交通機関でのご来校をお願いしております。お車や自転車での校内への乗り入れはご遠慮くださいますよう、お願いいたします。",
       "notify": false
     }
   ]
