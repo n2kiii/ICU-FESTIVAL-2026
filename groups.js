@@ -261,13 +261,16 @@ renderFloor("1");
 
 const outdoorCategoryData = [
   { id: "apparel", number: "01", name: "アパレル・物販", description: "衣類やグッズ、作品などを販売する企画", projects: [
-    { tent: "TENT 1", group: "ICUサービス", title: "ICU公式アパレル販売", icon: "assets/559_icon.png", pr: "ICU公式アパレルがICU祭に登場。スウェットトレーナーやシャツなど、普段使いしやすい定番アイテムを取りそろえています。" },
-    { tent: "TENT 43", group: "ELABEL", title: "フェアトレードギャラリー", icon: "assets/tent43.png", pr: "フェアトレードを知っていますか？サークルで制作しているトートバッグやハンカチ、アクセサリー、雑貨など、様々なフェアトレード商品を販売します！美味しくて素敵な商品を通して、フェアトレードについて考えてみませんか？" },
-    { tent: "TENT 64", group: "D27 写真部 Lucida", title: "Photo Market Lucida", icon: "assets/icon-nothing.png", pr: "写真部Lucidaの写真を使ったグッズなどを販売しています！あなたのお気に入りの一枚を見つけてください！" },
-    { tent: "TENT 70", group: "んたぱぽ", title: "ポポップアップ 'popopop!!'", icon: "assets/tent70.jpg", pr: "んたぱぽのPOP-UP STOREを開催します。" },
-    { tent: "TENT 79", group: "100円ステッカー", title: "100円ステッカー", icon: "assets/542.jpg", pr: "オリジナルデザインをしたステッカーを販売しています。ぜひ遊びに来てください。" }
+    { tent: "TENT 1", group: "ICUサービス", title: "ICU公式アパレル販売", icon: "assets/559_icon.png", pr: "ICU公式アパレルがICU祭に登場。スウェットトレーナーやTシャツなど、普段使いしやすい定番アイテムを取りそろえています。" },
+    { tent: "TENT 26", group: "ICU Honey Project", title: "ハニプロのはちみつ販売", icon: "assets/tent26.jpg", pr: "ICUで採れたおいしいはちみつを販売しています！はちみつと廃棄予定のみかんを活用した爽やか＆できたてスカッシュもぜひ召し上がってください！🐝" },
+    { tent: "TENT 43", group: "ELABEL", title: "フェアトレードギャラリー", icon: "assets/tent43.png", pr: "フェアトレードを知っていますか？サークルで制作しているトートバックやハンカチタオルに加え、ドライマンゴーやアクセサリー、雑貨など、様々なフェアトレード商品を販売します！美味しくて素敵な商品を通して、フェアトレードについて考えてみませんか？" },
+    { tent: "TENT 64", group: "D27 写真部 Lucida", title: "Photo Market Lucida", icon: "assets/icon-nothing.png", pr: "写真部Lucidaの写真を使ったグッズなどを販売しています！あなたの心に刺さる「推し写真」を見つけて、ぜひ投票してください！" },
+    { tent: "TENT 70", group: "んたぱぽ", title: "ポポップアップ 'popopop!!'", icon: "assets/tent70.jpg", pr: "んたぽぽ POP-UP store \"popopup\"!!" },
+    { tent: "TENT 79", group: "100円ステッカー", title: "100円ステッカー", icon: "assets/542.jpg", pr: "オリジナルでデザインをしたステッカーを販売しています。ぜひ遊びに来てください。" }
   ] },
   { id: "sweets", number: "02", name: "スイーツ", description: "甘いものを楽しめる企画", projects: [
+    { tent: "TENT 5", group: "珈琲同好会", title: "珈琲同好会", pr: "TINY PONTA COFFEEさんから仕入れた4種類の珈琲をみなさんにお届けします！浅煎りから深煎りまで、味わいの異なるコーヒーはもちろん、少し贅沢な一杯として、まるでワインを思わせる華やかな香りを楽しめるコーヒーもご用意しました！ぜひお菓子と一緒に珈琲を楽しんでいってください☕️" },
+    { tent: "TENT 31", group: "27SL南アチーム", title: "南アフリカ・ルイボスティーカフェ", icon: "assets/tent31.jpg", pr: "南アフリカのセダルバーグ山脈。この地ではまろやかで香り豊かなルイボスティーが親しまれてきました。果実や蜂蜜の味とおやつを添えて、優雅な午後を過ごしませんか？" },
     { tent: "TENT 25", group: "ICU YEARBOOK委員会", title: "ICU祭特別号「スモア」", icon: "assets/tent25.png", pr: "1980年から続く伝統あるイヤーブック委員会。そんなイヤーブックの部員がお届けする甘くてとろけるマシュマロチョコサンド、スモアはいかがでしょうか？" },
     { tent: "TENT 32", group: "ARC", title: "SWEET SHOT!", icon: "assets/tent32.png", pr: "Sweet shot churros in 6 flavours, a flavour of your choice presented in a cup with an arrow shot on one!" },
     { tent: "TENT 35", group: "29 3G", title: "元祖 Age! Age! Pan Man!", icon: "assets/tent35.JPEG", pr: "昨年度グランプリ準優勝！懐かしさと美味しさを兼ね備えた「揚げパン」を、今年も販売します！味も色々あるので、お腹が空いた方もぜひ気軽にお立ち寄りください！" },
@@ -304,7 +307,6 @@ const outdoorCategoryData = [
     { tent: "TENT 28", group: "30 3I", title: "NEW ERA", icon: "assets/tent28.jpeg", pr: "コスパ最強&激うまな鶏皮串！心を込めて一本一本秘伝のタレを絡めてみんなに届けます！！お値段以上NEW ERAをぜひ食べにきてね！！！30 3I NEW ERA" },
     { tent: "TENT 29", group: "Papoose", title: "Papooseのケバブ", icon: "assets/tent29.jpg", pr: "テニスサークルメンバーが目の前で焼き上げるケバブのお肉と野菜を詰め込んだ、絶品ケバブを販売します！\n食欲をそそる香りとボリューム満点のケバブは、文化祭の食べ歩きにもぴったり！\n\n一口食べれば、あなたもケバブの虜に！？\n友達と一緒に、ぜひ私たちのブースへお越しください！\n皆さんのお越しをお待ちしています！" },
     { tent: "TENT 30", group: "IBL", title: "IBLのたこ焼き", icon: "assets/tent30.jpg", pr: "とっても美味しいたこ焼き売ります！なんと味は4種類から選べます！" },
-    { tent: "TENT 31", group: "27SL南アチーム", title: "南アフリカ・ルイボスティーカフェ", icon: "assets/tent31.jpg", pr: "南アフリカのセダルバーグ山脈。この地ではまろやかで香り豊かなルイボスティーが親しまれてきました。果実や蜂蜜の味とおやつを添えて、優雅な午後を過ごしませんか？" },
     { tent: "TENT 33", group: "30 3F", title: "Funky Fry Factory", icon: "assets/tent33.png", pr: "アツアツのフライドポテトとカリカリの揚げパスタが作り出す、至極のハーモニー！3種の味付けで楽しめる、小腹満たしにぴったりな一品です。ぜひ一度、Funky Fry Factoryへ足を運んでみてください！" },
     { tent: "TENT 34", group: "第三女子寮", title: "背徳ソトック食っとく？", icon: "assets/tent34.jpeg", pr: "ソトック食っとく？\nコクのある甘辛ソースに納得のいく背徳感。\nとっくになくなるやみつきの美味しさ。\n今年の三女は一味違うよ！\nお得に買うなら早めにおいで！\n3WDのソトックソトック。" },
 { tent: "TENT 36", group: "祭 OBG", title: "ICUコロッケ", icon: "assets/tent36.png", pr: "ICU祭実行委員会OBGが作るアツアツICUコロッケ！ぜひ食べにきてやま〜" },
@@ -324,7 +326,7 @@ const outdoorCategoryData = [
     { tent: "TENT 60", group: "競技ダンス部", title: "豚汁しか勝たん", icon: "assets/tent60.png", pr: "具材たっぷり、心も体もぽかぽかになる豚汁を販売します！ICU祭でしか味わえない一杯を、ぜひお楽しみください！" },
     { tent: "TENT 68", group: "G89, ICU VIRAL WIZARD", title: "ベトナム伝統グルメ祭！", icon: "assets/tent68.jpeg", pr: "ベトナムの定番グルメ、バインミーとベトナムコーヒーを販売します！本場の味を楽しみながら、ベトナムの食文化を気軽に体験してみませんか？" },
     { tent: "TENT 69", group: "国際基督教大学競馬研究会", title: "競馬まぜそば", icon: "assets/tent69.png", pr: "今年設立された、ICU公認の競馬研究会がまぜそばを提供します！普段は競馬を研究してる私たちがタレから研究したまぜそばを是非ご賞味ください！" },
-    { tent: "TENT 71", group: "フライングディスク部WINDS", title: "フリスビー型お好み焼き！", pr: "フリスビー型の美味しいお好み焼きです" },
+    { tent: "TENT 71", group: "フライングディスク部WINDS", title: "フリスビー型お好み焼き！", icon: "assets/tent71.jpeg", pr: "フリスビー型の美味しいお好み焼きです" },
     { tent: "TENT 74", group: "30 2A", title: "30 2Aの目玉焼き焼きそば！", icon: "assets/tent74.png", pr: "キムチ・紅生姜・天かすの盛り放題付き焼きそばを販売します！プラス100円で大盛りや目玉焼きの追加も可能です！！食欲そそる、自慢の味をぜひ食べに来てください！" },
     { tent: "TENT 76", group: "ORCA", title: "ラフテーまん", icon: "assets/tent76.jpg", pr: "めんそーれ！例年ICU祭1位獲得のダイビング部ORCAは、今年も本格的な沖縄の味をお届けします！泡盛や黒糖で味付けした沖縄の角煮まんをお楽しみください！" },
     { tent: "TENT 78", group: "男子サッカー部", title: "ICUFC焼きそば", icon: "assets/tent78.jpg", pr: "ICUFC’s most delicious yakisoba!!! 本校サッカー部一同が心底からの愛を込めて作り上げた出来立ての焼きそばを提供！" }
@@ -334,11 +336,16 @@ const outdoorCategoryData = [
     { tent: "TENT 6", group: "30 3H", title: "マジック・レモネード", icon: "assets/tent6.png", pr: "ようこそICUへ！私たちは青い「マジック・レモネード」を販売します。レモネードに魔法の液体を入れると何かが起こるかも？ぜひ303Hのブースへお越しください！" },
     { tent: "TENT 8", group: "30 3O", title: "3O", icon: "assets/tent8.jpeg", pr: "10月の残暑に嬉しいスイーツドリンクを販売します！" },
     { tent: "TENT 12", group: "第四女子寮", title: "四女茶屋", icon: "assets/tent12.jpg", pr: "こんにちは、第四女子寮です！今年で設立62年を迎える華の4女が、こだわりの豆乳ラテを販売します☕️ほっと一息つきに、ぜひ遊びに来てください！" },
+    { tent: "TENT 13", group: "野田村にICU旋風を吹き起こす会", title: "野田村のうんめえ海鮮塩焼きそば", icon: "assets/tent13.png", pr: "【昨年も大好評】岩手県野田村の特産ホタテと野田塩を使ったうんめえ塩焼きそばと山葡萄サイダー！海鮮だしききまくり＆丸ごとホタテで旨すぎぶっ飛ぶぞ！！！！" },
     { tent: "TENT 16", group: "女子ラクロス部", title: "Tropicalax", icon: "assets/tent16.jpeg", pr: "🌺ハイビスカスが彩る、南国トロピカルソーダ！🌴\nカラフルな4色のトロピカルソーダが登場✨\nマンゴーなどのフルーツとハイビスカスを添えた、見た目も味も最高の一杯をどうぞ！" },
+    { tent: "TENT 19", group: "30 3P", title: "すりーぴーらすく", icon: "assets/tent19.PNG", pr: "美味しい美味しいチョコ味・ガーリックバター味・シュガーバター味の3味のラスクを3P(すりーぴー)のメンバーがお届けします!!ドリンクもございますのでぜひ！" },
     { tent: "TENT 23", group: "30 3M", title: "3M LASSI HOUSE", pr: "実は紀元前1000年ごろに生まれ、今も愛され続けるラッシー。3M Lassi houseで、甘くまろやかな異国の味わいを楽しみながら、ほっと一息つきませんか？" },
     { tent: "TENT 26", group: "ICU Honey Project", title: "ハニプロのはちみつ販売", icon: "assets/tent26.jpg", pr: "ICUで採れたおいしいはちみつを販売しています！はちみつと廃棄予定のみかんを活用した爽やか＆できたてスカッシュもぜひ召し上がってください！🐝" },
     { tent: "TENT 27", group: "30 3J", title: "Hawaiian Sky in the Tea", icon: "assets/tent27.jpeg", pr: "ハワイの空の移ろいを、3種類のフルーツの香りとともに表現しました！\nこの一口で、遠い友達を思い出すかも...？！" },
     { tent: "TENT 31", group: "27SL南アチーム", title: "南アフリカ・ルイボスティーカフェ", icon: "assets/tent31.jpg", pr: "南アフリカのセダルバーグ山脈。この地ではまろやかで香り豊かなルイボスティーが親しまれてきました。果実や蜂蜜の味とおやつを添えて、優雅な午後を過ごしませんか？" },
+    { tent: "TENT 49", group: "Spanish Speaking Society", title: "今朝採れケサディーヤ", icon: "assets/tent49.png", pr: "スペイン語圏の食文化を楽しめる、ケサディーヤとサングリアを販売します！本場の味を気軽に味わいながら、異文化に触れてみませんか？" },
+    { tent: "TENT 51", group: "ICU LAMBS", title: "BRAZILソーセージで乾杯！", icon: "assets/tent51.JPG", pr: "サンバサークルのICUラムズです！\nブラジルソーセージとブラジルで人気の炭酸飲料ガラナを販売します！" },
+    { tent: "TENT 68", group: "G89, ICU VIRAL WIZARD", title: "ベトナム伝統グルメ祭！", icon: "assets/tent68.jpeg", pr: "ベトナムの定番グルメ、バインミーとベトナムコーヒーを販売します！本場の味を楽しみながら、ベトナムの食文化を気軽に体験してみませんか？" },
     { tent: "TENT 62", group: "ICUクラシックバレエサークル レカン", title: "ビビディ・バビディ・ブルーソーダ", icon: "assets/tent62.jpg", pr: "私たちレカンが冬公演にて上演する「シンデレラ」をイメージした、きれいなブルーのゼリーソーダを販売します♪" },
     { tent: "TENT 66", group: "ぱくちー", title: "魔女屋", icon: "assets/tent66.PNG", pr: "美味しいハーブティーと占いが体験できます！ぜひお越しください♡" },
     { tent: "TENT 75", group: "チャイのみちゃい", title: "チャイ屋さん", pr: "ようこそ、ゆいことかれんのチャイ屋さんへ！今年の春にインドを旅した私たちが、本場のチャイをお届けします！チャイを片手にディープな旅の話をしましょう！" },
