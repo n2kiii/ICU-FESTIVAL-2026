@@ -45,10 +45,10 @@ const floorData = {
 
 const mainBuildingProjects = {
   "1": [
-    { room: "101", group: "筝曲部生田流如月会", pr: "日本の伝統楽器お箏にふれて、和の音色と伝統文化の魅力を体験してみませんか？" },
+    { room: "101", group: "筝曲部生田流如月会", title: "お箏体験&小演奏会", pr: "日本の伝統楽器お箏にふれて、和の音色と伝統文化の魅力を体験してみませんか？" },
     { room: "102", group: "ICU祭実行委員会公式企画　縁日", pr: "輪投げや10秒ぴったりチャレンジ、巨大ジェンガなど、ここでしか味わえないアクティビティを楽しめます！景品もあるかも、？是非お越しください！", fee: "料金：200円" },
-    { room: "124", group: "三鷹市総合保健センター", pr: "プレコンセプションケアに関する展示やシール投票、野菜スタンプ、握力測定を行います。見て、さわって、聞いて、自分の健康を振り返ってみましょう。" },
-    { room: "125", group: "ICUグリークラブ", pr: "アカペラカフェでは、飲み物とお菓子を片手に歌を楽しめる！部員がユニットを組んで演奏するICU祭限りの様々なステージが、一日中続きます。ぜひお立ち寄りください！" },
+    { room: "124", group: "三鷹市総合保健センター", title: "知ってる？プレコンセプションケア", pr: "プレコンセプションケアに関する展示やシール投票、野菜スタンプ、握力測定を行います。見て、さわって、聞いて、自分の健康を振り返ってみましょう。" },
+    { room: "125", group: "ICUグリークラブ", title: "A Cappella Cafe", pr: "アカペラカフェでは、飲み物とお菓子を片手に歌を楽しめる！部員がユニットを組んで演奏するICU祭限りの様々なステージが、一日中続きます。ぜひお立ち寄りください！" },
     { room: "151", group: "ICU祭実行委員会公式企画　ワークショップ", pr: "今年は、子供から大人まで楽しめる、「ビーズ・スライム・ボタン・カスタムボールペン」の4つのワークショップを開催します！ガチャガチャもあるよ🌟", details: "＊体験内容によって料金が異なります。" },
     { room: "152, 153", group: "探る！こころの不思議\n～遊んで学ぶ心理学～", pr: "クイズやゲームで、心理学を楽しく体験！\n\n「なんでこう思うの？」「どうして気づかなかった？」\n\nこころのふしぎを発見してみよう\n\nフォトスポットや記念品も用意しています！！" },
     { room: "155", group: "ICU祭実行委員会公式企画　運命の30番地", pr: "運勢をテーマにして占いやおみくじの販売を行う、ID30のメンバーだけでゼロから作り上げた新企画！！学生だけでなくICU祭に来てくださる全ての方に楽しんでいただける企画となっています✨", details: "＊体験内容によって料金が異なります。" },
@@ -58,31 +58,31 @@ const mainBuildingProjects = {
   ],
   "2": [
     { room: "201", group: "ICU祭実行委員会公式企画 Welcome to ELA", pr: "ICUの授業ってどんな感じ？\n\n1年生必修の英語×ディスカッション型講義 ”ELA（English for Liberal Arts）” を、特別に体験できるチャンスです！\n\nICU生の登竜門、ひと足先に体験してみませんか？", details: "10/11・12 両日13:00〜", reservationUrl: "https://forms.gle/AurTBsvvgSSg9LvSA" },
-    { room: "202", group: "美術愛好会", pr: "こんにちは！美術愛好会です！個性豊かな部員が描いたイラストの展示や、ハンドメイド作品・アクリルチャーム・ステッカーの販売をいたします。魚釣り・ガチャなどのミニゲーム、レジン作成体験といったワークショップも予定しております！家族連れの方もぜひ気軽にご参加ください♪" },
-    { room: "204", group: "国際基督教大学書道部", pr: "部員それぞれの個性が詰まった、多様な書道作品を展示しています。実際に筆を執って書道を楽しめる体験コーナーも開催中！初心者の方やお子様も大歓迎です！" },
-    { room: "205", group: "お笑い研究会", pr: "漫才やコントはもちろん、昨年人気だった観客参加型大喜利を今年も行います。皆様の部員超えの回答をお待ちしています！入退場自由ですのでお気軽にお越しください！" },
-    { room: "223", group: "国際基督教大学吹奏楽部", pr: "今夜限りのスペシャルオープン。ここでのみ味わえるあなただけの一杯。BRASSの奏でるハーモニーをご賞味あれ。" },
+    { room: "202", group: "美術愛好会", title: "みんなのAtelier Garden", pr: "こんにちは！美術愛好会です！個性豊かな部員が描いたイラストの展示や、ハンドメイド作品・アクリルチャーム・ステッカーの販売をいたします。魚釣り・ガチャなどのミニゲーム、レジン作成体験といったワークショップも予定しております！家族連れの方もぜひ気軽にご参加ください♪" },
+    { room: "204", group: "国際基督教大学書道部", title: "2026年度 書道体験＆展示会", pr: "部員それぞれの個性が詰まった、多様な書道作品を展示しています。実際に筆を執って書道を楽しめる体験コーナーも開催中！初心者の方やお子様も大歓迎です！" },
+    { room: "205", group: "お笑い研究会", title: "ICU祭お笑いライブ", pr: "漫才やコントはもちろん、昨年人気だった観客参加型大喜利を今年も行います。皆様の部員超えの回答をお待ちしています！入退場自由ですのでお気軽にお越しください！" },
+    { room: "223", group: "国際基督教大学吹奏楽部", title: "Music Bar BRASS", pr: "今夜限りのスペシャルオープン。ここでのみ味わえるあなただけの一杯。BRASSの奏でるハーモニーをご賞味あれ。" },
     { room: "224", group: "ICU祭実行委員会公式企画　IBSトークセッション", pr: "現役ICU生によるリアルトーク！大学での学び、留学や寮生活まで、本音で語ってくれます。", details: "10/11・12 両日11:00〜" },
     { room: "253", group: "ICU祭実行委員会公式企画　キミがDJ! こどもラジオ局", pr: "ここはこどもラジオ局。みんながラジオのMC！マイクを通じて気になる日常の”なぜ？”を教授に聞いてみよう！", fee: "料金：500円", details: "10/11・12（事前予約制）\n第一部 10:30〜11:00\n第二部 11:15〜11:45\n第三部 13:30〜14:00\n第四部 14:15〜14:45\n\n＊人数制限がございますが、観覧は予約なしでしていただけます\n＊体験中の会話は録音され、後日編集を行い、音声ファイルとして体験者の皆様にお渡しします。", reservationUrl: "https://forms.gle/AurTBsvvgSSg9LvSA" },
-    { room: "273", group: "ICU Compost", pr: "私たちは、学内の寮の生ごみを堆肥化するコンポストの団体です！活動内容についての展示を行うので、初めてコンポストを聞いた方も、興味がある方もぜひお越しください" },
-    { room: "274", group: "ICU落語研究会", pr: "落語が初めての方でも楽しみやすい公演です！ふらっと立ち寄って、ひと笑いしていきませんか？1日目と2日目では公演内容も異なりますので、ぜひ両日お越しください！" },
-    { room: "275", group: "ICU人形劇研究会ぱぺっと", pr: "ICUで60年以上前から活動している人形劇サークル、ぱぺっとが送る楽しい人形劇。お子様連れにもおすすめです。登場する人形たちはなんと、すべて手作り！ICUに昔から住んでいる可愛くてヘンテコな仲間たちに、ぜひ会いにきてください！" },
-    { room: "276", group: "ICUかるたサークル", pr: "「ちはやふる」でお馴染みの競技かるたを体験していただけます✨初見の方も経験者の方も、ICUかるたサークル復活後初の文化祭出展にぜひご来場ください‼︎" }
+    { room: "273", group: "ICU Compost", title: "Compost", pr: "私たちは、学内の寮の生ごみを堆肥化するコンポストの団体です！活動内容についての展示を行うので、初めてコンポストを聞いた方も、興味がある方もぜひお越しください" },
+    { room: "274", group: "ICU落語研究会", title: "ICU祭寄席2026", pr: "落語が初めての方でも楽しみやすい公演です！ふらっと立ち寄って、ひと笑いしていきませんか？1日目と2日目では公演内容も異なりますので、ぜひ両日お越しください！" },
+    { room: "275", group: "ICU人形劇研究会ぱぺっと", title: "人形劇研究会ぱぺっと2026ICU祭公演", pr: "ICUで60年以上前から活動している人形劇サークル、ぱぺっとが送る楽しい人形劇。お子様連れにもおすすめです。登場する人形たちはなんと、すべて手作り！ICUに昔から住んでいる可愛くてヘンテコな仲間たちに、ぜひ会いにきてください！" },
+    { room: "276", group: "ICUかるたサークル", title: "ちはやふるの世界へようこそ", pr: "「ちはやふる」でお馴染みの競技かるたを体験していただけます✨初見の方も経験者の方も、ICUかるたサークル復活後初の文化祭出展にぜひご来場ください‼︎" }
   ],
   "3": [
     { room: "3階ラウンジ", group: "ICU祭実行委員会公式企画　「キリスト教あるある」", pr: "キリスト教をまだ知らない人へ向けた、キリスト教を「知る・出会う」ことのできる常設展示です。\n\nクリスマス、イースターなど身近なテーマからキリスト教についてもうちょっと深く知ってみませんか？" },
-    { room: "301", group: "Paper Miracles ICU", pr: "パキスタンの女性たちが古紙から作り上げたビーズアクセサリー等を販売します。パキスタンの女性たちによる手作り商品ペーパーミラクルズをご覧に、是非お立ち寄り下さい！" },
-    { room: "303", group: "Japan ICU Foundation", pr: "世界の文化がICUに集まる2日間🌏\n\n食・文化・体験を通して、世界と出会う「JICUF International Day 2026」開催！" },
-    { room: "305", group: "ICUアーチェリー部", pr: "弓を引いて、的を射抜いてみませんか？🎯 初心者向けから本格的な弓まで体験できます！さらに高得点者には豪華景品も…！お子様から大人まで、ぜひ遊びに来てください！" },
-    { room: "308", group: "SDGs推進室", pr: "昨年好評のバンブーランタンワークショップに加え、サシェ販売と古着フリーテイク、自然班やフェアトレード班をはじめとする全5班による活動報告展示を行います！！" },
-    { room: "324", group: "ICU Rince", pr: "アイルランド音楽サークルRince(リンカ)です！歩き疲れたら、アイリッシュ音楽のセッションを聴きながら、ちょっと休憩しませんか？本館の教室で無印の音楽とともにお待ちしております！" },
-    { room: "351", group: "ハンドメイドサークル", pr: "手作りのアクセサリーやかわいい小物を販売しています！ぜひ見にきてください！" },
-    { room: "353", group: "CMS管弦楽団", pr: "CMS管弦楽団による「しむす喫茶」へようこそ！お菓子やジュースを楽しみながら、小編成アンサンブルやオーケストラの演奏を気軽にお楽しみいただけます♪" },
-    { room: "374", group: "ICUクラシックバレエサークル レカン", pr: "普段私たちがしているようなクラシックバレエのレッスン体験、また実際に舞台で使用するかわいい衣装を着ての撮影ができます♡" }
+    { room: "301", group: "Paper Miracles ICU", title: "希望を紡ぐペーパービーズ", pr: "パキスタンの女性たちが古紙から作り上げたビーズアクセサリー等を販売します。パキスタンの女性たちによる手作り商品ペーパーミラクルズをご覧に、是非お立ち寄り下さい！" },
+    { room: "303", group: "Japan ICU Foundation", title: "JICUF International Day", pr: "世界の文化がICUに集まる2日間🌏\n\n食・文化・体験を通して、世界と出会う「JICUF International Day 2026」開催！" },
+    { room: "305", group: "ICUアーチェリー部", title: "アーチェリー体験", pr: "弓を引いて、的を射抜いてみませんか？🎯 初心者向けから本格的な弓まで体験できます！さらに高得点者には豪華景品も…！お子様から大人まで、ぜひ遊びに来てください！" },
+    { room: "308", group: "SDGs推進室", title: "SDGs推進室ワークショップ", pr: "昨年好評のバンブーランタンワークショップに加え、サシェ販売と古着フリーテイク、自然班やフェアトレード班をはじめとする全5班による活動報告展示を行います！！" },
+    { room: "324", group: "ICU Rince", title: "アイリッシュカフェ", pr: "アイルランド音楽サークルRince(リンカ)です！歩き疲れたら、アイリッシュ音楽のセッションを聴きながら、ちょっと休憩しませんか？本館の教室で無印の音楽とともにお待ちしております！" },
+    { room: "351", group: "ハンドメイドサークル", title: "ハンドメイド屋さん", pr: "手作りのアクセサリーやかわいい小物を販売しています！ぜひ見にきてください！" },
+    { room: "353", group: "CMS管弦楽団", title: "しむす喫茶", pr: "CMS管弦楽団による「しむす喫茶」へようこそ！お菓子やジュースを楽しみながら、小編成アンサンブルやオーケストラの演奏を気軽にお楽しみいただけます♪" },
+    { room: "374", group: "ICUクラシックバレエサークル レカン", title: "憧れの衣装でバレリーナ体験！", pr: "普段私たちがしているようなクラシックバレエのレッスン体験、また実際に舞台で使用するかわいい衣装を着ての撮影ができます♡" }
   ],
   "4": [
-    { room: "401", group: "Modern Music Society", pr: "どうもこんにちは！ICU Modern Music Society です！今年度のMMSはビッグバンド公演に加えてジャズ喫茶もオープンします！是非来てください！" },
-    { room: "426", group: "森オルガン受講生", pr: "本館4階にある森オルガンの受講生によるコンサートです。森有正記念オルガンの多彩な音色が奏でる素敵な一時をお過ごしください!" }
+    { room: "401", group: "Modern Music Society", title: "ジャズ喫茶むむす", pr: "どうもこんにちは！ICU Modern Music Society です！今年度のMMSはビッグバンド公演に加えてジャズ喫茶もオープンします！是非来てください！" },
+    { room: "426", group: "森オルガン受講生", title: "森オルガンコンサート", pr: "本館4階にある森オルガンの受講生によるコンサートです。森有正記念オルガンの多彩な音色が奏でる素敵な一時をお過ごしください!" }
   ]
 };
 
@@ -124,8 +124,9 @@ function renderMainBuildingProjectCard(project, floor) {
     ? `<a class="main-building-reservation-button" href="${project.reservationUrl}" target="_blank" rel="noopener noreferrer"><span class="main-building-reservation-button__label">事前予約は<br class="main-building-reservation-button__mobile-break">こちら</span><span class="main-building-reservation-button__heart" aria-hidden="true">♡</span></a>`
     : "";
   const groupMarkup = project.group.replace(/\n/g, "<br>");
+  const titleMarkup = project.title ? `<p class="main-building-project-title">${project.title}</p>` : "";
   const prMarkup = project.pr.replace(/\n/g, "<br>");
-  return `<article class="outdoor-project-card main-building-project-card main-building-project-card--floor-${floor}"><div class="outdoor-project-card__top"><div class="main-building-room-label"><span class="tent-number room-number">${formatMainBuildingRoom(project.room)}</span>${roomNoteMarkup}${reservationMarkup}</div><img class="outdoor-project-card__icon" src="${icon}" alt="${project.group}のアイコン"></div><h4>${groupMarkup}</h4><p class="main-building-project-pr">${prMarkup}</p>${feeMarkup}${detailsMarkup}</article>`;
+  return `<article class="outdoor-project-card main-building-project-card main-building-project-card--floor-${floor}"><div class="outdoor-project-card__top"><div class="main-building-room-label"><span class="tent-number room-number">${formatMainBuildingRoom(project.room)}</span>${roomNoteMarkup}${reservationMarkup}</div><img class="outdoor-project-card__icon" src="${icon}" alt="${project.group}のアイコン"></div><h4>${groupMarkup}</h4>${titleMarkup}<p class="main-building-project-pr">${prMarkup}</p>${feeMarkup}${detailsMarkup}</article>`;
 }
 
 function renderMainBuildingCards(floor) {
@@ -366,7 +367,7 @@ if (outdoorSection) {
     if (!raw) return "TENT 0";
     if (/^TENT\s*\d+$/i.test(raw)) return raw.replace(/^TENT\s*/i, "TENT ");
     if (/^\d+$/.test(raw)) return `TENT ${raw}`;
-    return raw.startsWith("TENT") ? raw : `TENT ${raw}`;
+    return raw;
   };
 
   outdoorSection.innerHTML = `<div class="section-heading"><div><p class="eyebrow">OUTDOOR TENTS</p><h2>屋外テント企画</h2></div><p>カテゴリを選ぶと、その企画一覧を確認できます。</p></div><div class="outdoor-category-grid">${outdoorCategoryData.map((category) => `<a class="outdoor-category" href="#outdoor-${category.id}"><span class="outdoor-category__number">${category.number}</span><h3>${category.name}</h3><p>${category.description}</p><span class="outdoor-category__link">VIEW PROJECTS →</span></a>`).join("")}</div>${outdoorCategoryData.map((category) => `<section class="outdoor-list" id="outdoor-${category.id}"><div class="outdoor-list__heading"><span class="eyebrow">${category.number} / ${category.name}</span><h3>${category.name}の企画</h3></div><div class="outdoor-project-list">${category.projects ? category.projects.slice().sort((firstProject, secondProject) => Number.parseInt(firstProject.tent.replace(/\D/g, ""), 10) - Number.parseInt(secondProject.tent.replace(/\D/g, ""), 10)).map((project) => `<article class="outdoor-project-card"><div class="outdoor-project-card__top"><span class="tent-number">${normalizeTentLabel(project.tent)}</span><img class="outdoor-project-card__icon" src="${project.icon || "assets/icon-nothing.png"}" alt="${project.group}のアイコン"></div><h4>${project.group}</h4><p class="outdoor-project-card__title">${project.title || "企画名"}</p><p>${project.pr}</p></article>`).join("") : `<article class="outdoor-project-placeholder"><span>PROJECTS</span><h4>企画情報を準備中</h4><p>このカテゴリの企画内容を受け取り次第、ここに一覧で掲載します。</p></article>`}</div></section>`).join("")}`;

@@ -428,6 +428,25 @@ main.page-shell.groups-page:has(.link-grid)::after {
   line-height: 1.5;
 }
 
+.other-project-card__icon {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  display: block;
+  width: 72px;
+  height: 72px;
+  margin: 0;
+  border: 1px solid rgba(22, 142, 172, .16);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, .8);
+  object-fit: contain;
+}
+
+.other-project-card:has(.other-project-card__icon) .other-project-card__location-block {
+  min-height: 76px;
+  padding-right: 82px;
+}
+
 .other-project-card h3 {
   margin: 14px 0 10px;
   color: var(--teal-dark);

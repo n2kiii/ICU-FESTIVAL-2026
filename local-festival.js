@@ -118,6 +118,30 @@
       location: 'T-171',
       details: '10/12 15:00~16:00\n登壇者：小野 創 教授（言語学 / 社会・人文科学分野）、佐藤 望 教授（音楽 / 人文科学分野）、田中 宏季 教授（情報科学 / 自然科学分野）\n＊事前予約・当日ウォークインどちらも可',
       reservation: true
+    },
+    {
+      name: '国際基督教大学 茶道部',
+      pr: 'こんにちは！茶道部は今回、秋季茶会を開催します。皆様にはお点前見学や、お抹茶とお菓子をお楽しみ頂けます。どんな方でも大歓迎！泰山荘にてお待ちしております！',
+      location: '泰山荘',
+      icon: 'assets/茶道部.png'
+    },
+    {
+      name: 'ICUボルダリング部',
+      pr: '大学内にボルダリングジム？！壁に登って自分の力を試してみませんか？ボルダリングの魅力にハマって帰れなくなること間違いなし、みんなで壁登りマスターになろう！',
+      location: 'Egym',
+      icon: 'assets/ボルダリング部.jpg'
+    },
+    {
+      name: 'リーガーオルガン受講生',
+      pr: 'チャペルにあるリーガーオルガンの受講生によるコンサートです。チャペルに広がるオルガンの雄大な響きをどうぞお楽しみください！',
+      location: 'チャペル',
+      icon: 'assets/チャペル.jpg'
+    },
+    {
+      name: 'ICU三鷹キャンパスの森事務局',
+      pr: 'ICUにこんな癒しスポットが⁉自然あふれる「フォレストガーデン」を休憩場所として開放します。人数限定でツアーも開催！お茶を片手に、一緒に散策してみませんか？',
+      location: 'フォレストガーデン',
+      icon: 'assets/森事務局.png'
     }
   ];
 
@@ -131,12 +155,13 @@
   otherSection.className = 'group-category other-projects-category';
   otherSection.id = 'other-projects';
   otherSection.innerHTML = '<div class="section-heading"><div><p class="eyebrow">AREA 04 / OTHER PROJECTS</p><h2>その他の企画</h2></div><p>キャンパス各所で開催される公式企画</p></div><div class="other-project-grid">' + otherProjects.map(function (project, index) {
+    var icon = project.icon ? '<img class="other-project-card__icon" src="' + project.icon + '" alt="' + project.name + 'のアイコン">' : '';
     var details = project.details ? '<p class="other-project-card__details">' + project.details.replace(/\n/g, '<br>') + '</p>' : '';
     var locationNote = project.location === 'T-171' ? '<p class="other-project-card__location-note">本館横のトロイヤー記念アーツ・サイエンス館です</p>' : '';
     var reservationUrl = project.reservationUrl || (project.reservation ? 'https://forms.gle/AurTBsvvgSSg9LvSA' : '');
     var reservationLabel = project.reservationLabel || '事前予約はこちら';
     var reservationButton = reservationUrl ? '<a class="other-project-card__reservation" href="' + reservationUrl + '" target="_blank" rel="noopener noreferrer">' + reservationLabel + ' <span aria-hidden="true">♡</span></a>' : '';
-    return '<article class="other-project-card other-project-card--tone-' + (index % 4 + 1) + '"><div class="other-project-card__location-block"><span class="other-project-card__location-tag">' + project.location + '</span>' + locationNote + '</div><h3>' + project.name + '</h3><p class="other-project-card__pr">' + project.pr.replace(/\n/g, '<br>') + '</p>' + details + reservationButton + '</article>';
+    return '<article class="other-project-card other-project-card--tone-' + (index % 4 + 1) + '"><div class="other-project-card__location-block"><span class="other-project-card__location-tag">' + project.location + '</span>' + locationNote + '</div>' + icon + '<h3>' + project.name + '</h3><p class="other-project-card__pr">' + project.pr.replace(/\n/g, '<br>') + '</p>' + details + reservationButton + '</article>';
   }).join('') + '</div>';
   section.parentNode.insertBefore(otherSection, section.nextSibling);
 }());
