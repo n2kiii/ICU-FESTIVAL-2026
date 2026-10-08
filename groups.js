@@ -266,7 +266,7 @@ const outdoorCategoryData = [
     { tent: "TENT 26", group: "ICU Honey Project", title: "ハニプロのはちみつ販売", icon: "assets/tent26.jpg", pr: "ICUで採れたおいしいはちみつを販売しています！はちみつと廃棄予定のみかんを活用した爽やか＆できたてスカッシュもぜひ召し上がってください！🐝" },
     { tent: "TENT 43", group: "ELABEL", title: "フェアトレードギャラリー", icon: "assets/tent43.png", pr: "フェアトレードを知っていますか？サークルで制作しているトートバックやハンカチタオルに加え、ドライマンゴーやアクセサリー、雑貨など、様々なフェアトレード商品を販売します！美味しくて素敵な商品を通して、フェアトレードについて考えてみませんか？" },
     { tent: "TENT 64", group: "D27 写真部 Lucida", title: "Photo Market Lucida", icon: "assets/icon-nothing.png", pr: "写真部Lucidaの写真を使ったグッズなどを販売しています！あなたの心に刺さる「推し写真」を見つけて、ぜひ投票してください！" },
-    { tent: "TENT 70", group: "んたぱぽ", title: "ポポップアップ 'popopop!!'", icon: "assets/tent70.jpg", pr: "んたぽぽ POP-UP store \"popopup\"!!" },
+    { tent: "TENT 70", group: "んたぱぽ", title: "ポポップアップ", icon: "assets/tent70.jpg", pr: "んたぽぽ POP-UP store \"popopup\"!!" },
     { tent: "TENT 79", group: "100円ステッカー", title: "100円ステッカー", icon: "assets/542.jpg", pr: "オリジナルでデザインをしたステッカーを販売しています。ぜひ遊びに来てください。" }
   ] },
   { id: "sweets", number: "02", name: "スイーツ", description: "甘いものを楽しめる企画", projects: [
