@@ -43,7 +43,7 @@
     var thanksSponsors = document.createElement('section');
     thanksSponsors.className = 'thanks-sponsors';
     thanksSponsors.setAttribute('aria-labelledby', 'thanks-sponsors-title');
-    thanksSponsors.innerHTML = '<p class="eyebrow">WITH GRATITUDE</p><h2 id="thanks-sponsors-title">協賛企業・団体の皆さま</h2><div class="thanks-logo-grid">' + Array.from({ length: 17 }, function (_, index) { var number = index + 1; var extensions = { 1: 'png', 2: 'jpg', 3: 'png', 4: 'jpg', 5: 'jpg', 6: 'png', 7: 'png', 8: 'png', 9: 'jpg', 10: 'jpeg', 11: 'png', 12: 'png', 13: 'png', 14: 'jpg', 15: 'png', 16: 'png', 17: 'jpg' }; return '<figure><img src="assets/thankslogo-' + number + '.' + extensions[number] + '" alt="協賛企業ロゴ ' + number + '"></figure>'; }).join('') + '</div>';
+    thanksSponsors.innerHTML = '<p class="eyebrow">WITH GRATITUDE</p><h2 id="thanks-sponsors-title">協賛企業・団体の皆さま</h2><div class="thanks-logo-grid">' + Array.from({ length: 18 }, function (_, index) { var number = index + 1; var extensions = { 1: 'png', 2: 'jpg', 3: 'png', 4: 'jpg', 5: 'jpg', 6: 'png', 7: 'png', 8: 'png', 9: 'jpg', 10: 'jpeg', 11: 'png', 12: 'png', 13: 'png', 14: 'jpg', 15: 'png', 16: 'png', 17: 'jpg' }; var src = number === 18 ? 'assets/sponsor-henri-charpentier.svg' : 'assets/thankslogo-' + number + '.' + extensions[number]; var alt = number === 18 ? 'アンリ・シャルパンティエ' : '協賛企業ロゴ ' + number; return '<figure><img src="' + src + '" alt="' + alt + '"></figure>'; }).join('') + '</div>';
     thanksPage.appendChild(thanksSponsors);
   }
 
