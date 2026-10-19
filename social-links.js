@@ -47,6 +47,36 @@
     thanksPage.appendChild(thanksSponsors);
   }
 
+  if (thanksPage && !thanksPage.querySelector('.thanks-people')) {
+    var thanksPeople = document.createElement('section');
+    thanksPeople.className = 'thanks-people';
+    thanksPeople.setAttribute('aria-labelledby', 'thanks-people-title');
+    thanksPeople.innerHTML = '<p class="eyebrow">SPECIAL THANKS</p><h2 id="thanks-people-title">ご支援いただいた皆さま</h2><ul class="thanks-people-list"></ul>';
+    var thanksPeopleNames = [
+      '池島 広子',
+      '伊藤 想',
+      '荻原 哲',
+      '齊藤 浩太',
+      '高橋 尚宏',
+      '長谷川 攝',
+      '藤多 慶知',
+      '藤本 トモエ',
+      '前川 昇',
+      '前川 みどり',
+      '蒔原 省吾',
+      '米川 充',
+      'Hinako Yamamoto',
+      'その他ご支援いただいた方々'
+    ];
+    var thanksPeopleList = thanksPeople.querySelector('.thanks-people-list');
+    thanksPeopleNames.forEach(function (name) {
+      var item = document.createElement('li');
+      item.textContent = name;
+      thanksPeopleList.appendChild(item);
+    });
+    thanksPage.appendChild(thanksPeople);
+  }
+
   var footer = document.querySelector('.site-footer');
   document.querySelectorAll('.site-nav a[href="donation.html"]').forEach(function (link) {
     link.textContent = 'SUPPORT';

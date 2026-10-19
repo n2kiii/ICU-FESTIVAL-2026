@@ -17,11 +17,6 @@ main.page-shell:has(.link-grid):not(.thanks-page)::after {
 	white-space: pre-wrap;
 }
 
-main.page-shell.thanks-page::after {
-	content: "SPECIAL THANKS\A\ATHANKSページは準備中です\A公開までしばらくお待ちください。";
-	white-space: pre-wrap;
-}
-
 .sponsor-grid a {
 	display: block;
 	padding: 8px;
@@ -41,8 +36,7 @@ main.page-shell.thanks-page::after {
 
 
 main.page-shell:has(.info-board)::after,
-main.page-shell:has(.link-grid):not(.thanks-page)::after,
-main.page-shell.thanks-page::after {
+main.page-shell:has(.link-grid):not(.thanks-page)::after {
 	display: block;
 	margin-top: 24px;
 	padding: 56px 32px;

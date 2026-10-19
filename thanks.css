@@ -78,6 +78,44 @@ body:has(.thanks-page),
   object-fit: contain;
 }
 
+.thanks-people {
+  margin-top: 54px;
+  padding: 0 12px;
+}
+
+.thanks-people > .eyebrow {
+  margin: 0 0 6px;
+  color: var(--rose);
+  font-size: .72rem;
+  font-weight: 800;
+  letter-spacing: .14em;
+  text-align: center;
+}
+
+.thanks-people h2 {
+  margin: 0 0 24px;
+  color: var(--teal-dark);
+  font-family: var(--serif);
+  font-size: clamp(1.35rem, 3vw, 2rem);
+  text-align: center;
+}
+
+.thanks-people-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.thanks-people-list li {
+  padding: 5px 0;
+  color: var(--teal-dark);
+  font-family: var(--serif);
+  font-size: clamp(1.1rem, 2.5vw, 1.35rem);
+  font-weight: 700;
+  letter-spacing: .04em;
+}
+
 @media (max-width: 760px) {
   .thanks-page {
     padding: 88px 14px 84px;
@@ -100,5 +138,9 @@ body:has(.thanks-page),
 
   .thanks-logo-grid img {
     max-height: 78px;
+  }
+
+  .thanks-people {
+    margin-top: 40px;
   }
 }
