@@ -1,12 +1,25 @@
 html:has(.thanks-page),
 body:has(.thanks-page) {
-  background: linear-gradient(135deg, #f6e2ec 0%, #e9f4f7 34%, #c5eaf4 72%, #a9dcea 100%) fixed !important;
+  background-image:
+    linear-gradient(
+      rgba(246, 226, 236, .72) 0%,
+      rgba(233, 244, 247, .72) 34%,
+      rgba(197, 234, 244, .72) 72%,
+      rgba(169, 220, 234, .72) 100%
+    ),
+    url("assets/other-festivals-sparkles.png"),
+    linear-gradient(135deg, #f6e2ec 0%, #e9f4f7 34%, #c5eaf4 72%, #a9dcea 100%);
+  background-position: center, center, center;
+  background-repeat: no-repeat;
+  background-size: auto, cover, auto;
+  background-attachment: fixed;
 }
 
 .thanks-page {
   max-width: 1040px;
   margin: 0 auto;
   padding: 126px 22px 120px;
+  background: transparent !important;
 }
 
 .thanks-page .section-heading {
@@ -78,20 +91,8 @@ body:has(.thanks-page) {
 }
 
 .thanks-people {
-  position: relative;
-  isolation: isolate;
   margin-top: 54px;
   padding: 0 12px;
-}
-
-.thanks-people::before {
-  position: absolute;
-  inset: -24px -12px;
-  z-index: -1;
-  background: url("assets/other-festivals-sparkles.png") center / cover no-repeat;
-  content: "";
-  opacity: .48;
-  pointer-events: none;
 }
 
 .thanks-people > .eyebrow {
